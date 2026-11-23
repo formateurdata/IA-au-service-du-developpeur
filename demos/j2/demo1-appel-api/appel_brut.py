@@ -4,9 +4,10 @@ Affiche la requete minimale et la reponse non mise en forme, avec la meme API
 que le Lab 2 (responses). L'interet est dans les metadonnees : le bloc usage,
 le cout de l'appel, et le statut d'une reponse coupee. Voir README.md.
 
-    uv run appel_brut.py --live --enregistrer   # avant la session
-    python3 appel_brut.py                       # le jour J (rejeu)
+    uv run appel_brut.py --live --enregistrer   #
+    python3 appel_brut.py                       #
 """
+
 import json
 import os
 import sys
@@ -21,55 +22,75 @@ MODELE = "gpt-4o-mini"
 PRIX_ENTREE_USD = 0.15
 PRIX_SORTIE_USD = 0.60
 INSTRUCTIONS = "Tu es concis. Trois phrases maximum."
-QUESTION = ("Explique à un développeur ce qu'est la fenêtre de contexte "
-            "d'un modèle de langage.")
+QUESTION = (
+    "Explique à un développeur ce qu'est la fenêtre de contexte d'un modèle de langage."
+)
 # Le minimum accepte par l'API : assez court pour couper la reponse.
 LIMITE_COURTE = 16
 
 
 def collecte():
     from openai import OpenAI
+
     client = OpenAI(api_key=commun.cle())
     appel = {"model": MODELE, "instructions": INSTRUCTIONS, "input": QUESTION}
+
     return {
         "complet": client.responses.create(**appel).model_dump(mode="json"),
         "coupe": client.responses.create(
-            **appel, max_output_tokens=LIMITE_COURTE).model_dump(mode="json"),
+            **appel, max_output_tokens=LIMITE_COURTE
+        ).model_dump(mode="json"),
     }
 
 
 def texte(reponse):
     """Le texte produit, que le SDK expose aussi sous reponse.output_text."""
-    return "".join(contenu.get("text", "")
-                   for element in reponse.get("output") or []
-                   if element.get("type") == "message"
-                   for contenu in element.get("content") or []
-                   if contenu.get("type") == "output_text")
+    return "".join(
+        contenu.get("text", "")
+        for element in reponse.get("output") or []
+        if element.get("type") == "message"
+        for contenu in element.get("content") or []
+        if contenu.get("type") == "output_text"
+    )
 
 
 def cout(usage):
-    return (usage["input_tokens"] * PRIX_ENTREE_USD
-            + usage["output_tokens"] * PRIX_SORTIE_USD) / 1_000_000
+    return (
+        usage["input_tokens"] * PRIX_ENTREE_USD
+        + usage["output_tokens"] * PRIX_SORTIE_USD
+    ) / 1_000_000
 
 
 def montre(donnees):
     commun.bloc("Requête envoyée")
-    print(json.dumps({"model": MODELE, "instructions": INSTRUCTIONS,
-                      "input": QUESTION}, ensure_ascii=False, indent=2))
+    print(
+        json.dumps(
+            {"model": MODELE, "instructions": INSTRUCTIONS, "input": QUESTION},
+            ensure_ascii=False,
+            indent=2,
+        )
+    )
 
     reponse = donnees["complet"]
     commun.bloc("Réponse brute (champs vides retirés)")
-    remplis = {cle: valeur for cle, valeur in reponse.items()
-               if valeur not in (None, [], {}, "")}
+    remplis = {
+        cle: valeur
+        for cle, valeur in reponse.items()
+        if valeur not in (None, [], {}, "")
+    }
     print(json.dumps(remplis, ensure_ascii=False, indent=2)[:2500])
 
     usage = reponse["usage"]
     commun.bloc("Ce qu'il faut regarder")
     print("  texte  : %s" % texte(reponse))
-    print("  tokens : entrée %s + sortie %s = %s facturés"
-          % (usage["input_tokens"], usage["output_tokens"], usage["total_tokens"]))
-    print("  coût   : %.6f $ l'appel, %.2f $ les 1 000 appels"
-          % (cout(usage), cout(usage) * 1000))
+    print(
+        "  tokens : entrée %s + sortie %s = %s facturés"
+        % (usage["input_tokens"], usage["output_tokens"], usage["total_tokens"])
+    )
+    print(
+        "  coût   : %.6f $ l'appel, %.2f $ les 1 000 appels"
+        % (cout(usage), cout(usage) * 1000)
+    )
     print("  status : %s" % reponse["status"])
 
     coupe = donnees["coupe"]
@@ -77,7 +98,9 @@ def montre(donnees):
     commun.bloc("Le même appel, avec max_output_tokens=%d" % LIMITE_COURTE)
     print("  texte  : %s" % texte(coupe))
     print("  status : %s   raison : %s" % (coupe["status"], raison))
-    print("  completed = terminé ; incomplete = coupé. À tester avant d'utiliser le texte.")
+    print(
+        "  completed = terminé ; incomplete = coupé. À tester avant d'utiliser le texte."
+    )
 
 
 if __name__ == "__main__":
