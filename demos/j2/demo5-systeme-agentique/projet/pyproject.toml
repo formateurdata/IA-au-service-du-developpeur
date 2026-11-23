@@ -1,0 +1,15 @@
+[project]
+name = "demo-systeme-agentique"
+version = "1.0.0"
+description = "Jour 2, demo 5 : quatre agents Copilot font evoluer une API FastAPI"
+requires-python = ">=3.11,<3.15"
+dependencies = ["fastapi==0.136.3"]
+
+[dependency-groups]
+dev = ["httpx2==2.16.2", "pytest>=8.3,<10"]
+# Le SDK du pilote, pour les tests de verification sans compte Copilot
+orchestration = ["microsoft-copilot-sdk==2.0.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

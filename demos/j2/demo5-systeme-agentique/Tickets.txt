@@ -1,0 +1,62 @@
+TICKETS DE LA DÉMO 5 - à coller dans Copilot Chat, agent orchestrateur
+
+Point de départ : projet/ remis à zéro. GET /api/demandes renvoie les demandes
+1 (en_attente), 2 (livree) et 3 (en_attente), sans filtre ; uv run pytest : 1 passed.
+Les tickets s'enchaînent : chacun part de l'état laissé par le précédent.
+Une nouvelle conversation par ticket.
+
+
+======================================================================
+TICKET 1 - Un filtre de statut sur la liste
+======================================================================
+
+Version ouverte : l'orchestrateur propose lui-même les critères.
+
+Sur ce projet FastAPI, ajoute à GET /api/demandes un filtre de statut facultatif. Inspecte l'implémentation et les tests déjà présents. Propose un plan de code et un plan de tests avec les critères d'acceptation, puis attends ma validation.
+
+Version précise : les attendus sont fixés dans la demande.
+
+Sur ce projet FastAPI, ajoute à GET /api/demandes un paramètre facultatif statut.
+Sans filtre, la réponse reste identique : les demandes [1, 2, 3], dans cet ordre.
+Avec statut=en_attente, j'attends [1, 3]. Avec statut=livree, j'attends [2]. Avec statut=refusee, statut valide mais sans demande, j'attends une liste vide. Ces réponses renvoient HTTP 200.
+Une valeur inconnue, comme statut=urgente, renvoie HTTP 422.
+Inspecte l'implémentation et les tests existants, puis présente-moi le plan de code et le plan de tests avec les critères d'acceptation. Attends ma validation.
+
+À vérifier dans le diff : Statut est réutilisé depuis app/modeles.py, et le 422 vient du type, pas d'un if.
+
+
+======================================================================
+TICKET 2 - Lire une demande par son identifiant
+======================================================================
+
+Ajoute GET /api/demandes/{id_demande}, sans modifier la liste ni son filtre.
+Pour /api/demandes/2, j'attends HTTP 200 et la demande complète, identique à celle d'identifiant 2 renvoyée par GET /api/demandes.
+Pour /api/demandes/999, j'attends HTTP 404 avec {"detail": "Demande introuvable"}.
+Pour /api/demandes/abc, j'attends HTTP 422.
+Propose les critères d'acceptation et explique comment les tests distingueront une demande absente (404) d'un identifiant mal formé (422). Attends mon accord.
+
+À vérifier dans le diff : le 422 vient du type int du paramètre, le 404 d'une HTTPException explicite.
+
+
+======================================================================
+TICKET 3 - Paginer la liste (deux messages)
+======================================================================
+
+Message 1 : l'orchestrateur doit poser ses questions avant tout plan.
+
+La liste des demandes va grandir. Je veux que les clients puissent récupérer GET /api/demandes par pages, sans casser les appels existants. Avant de proposer un plan, pose-moi uniquement les questions dont la réponse change le comportement de l'API.
+
+Message 2 : les réponses, après ses questions.
+
+Voici mes réponses. Utilise deux paramètres facultatifs, offset et limit. Sans eux, la réponse reste exactement celle d'aujourd'hui : une liste JSON, sans enveloppe ni total.
+offset commence à 0 et doit être positif ou nul. limit, quand il est fourni, est compris entre 1 et 100 inclus. L'ordre existant est conservé. Le filtre statut s'applique d'abord, la pagination ensuite.
+Avec offset=1&limit=1, j'attends uniquement la demande 2. Avec statut=en_attente&offset=1&limit=1, uniquement la demande 3. Un offset au-delà de la dernière demande renvoie HTTP 200 et une liste vide. offset=-1, limit=0 et limit=101 renvoient HTTP 422.
+Présente-moi maintenant le plan à valider.
+
+
+
+======================================================================
+VALIDATION - le même message pour chaque ticket, après lecture du plan
+======================================================================
+
+Je valide ce plan. Enregistre-le et lance le pilote Python. À la fin, montre-moi le bilan : ce que chaque agent a fait, les fichiers modifiés avec leur diff, le résultat des tests, la preuve par critère et le lien vers la trace.

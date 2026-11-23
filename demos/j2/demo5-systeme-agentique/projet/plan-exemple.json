@@ -1,0 +1,13 @@
+{
+  "objectif": "Ajouter un filtre de statut facultatif à GET /api/demandes.",
+  "criteres": {
+    "CA1": "Sans filtre, HTTP 200 et identifiants [1, 2, 3] dans cet ordre.",
+    "CA2": "Avec statut=en_attente, HTTP 200 et identifiants [1, 3] dans cet ordre.",
+    "CA3": "Avec statut=livree, HTTP 200 et identifiants [2].",
+    "CA4": "Avec statut=refusee, valeur valide, HTTP 200 et liste vide.",
+    "CA5": "Avec statut=urgente, valeur inconnue, HTTP 422."
+  },
+  "code": ["app/main.py"],
+  "tests": ["tests/test_filtre_statut.py"],
+  "contexte": ["pyproject.toml", "app/modeles.py", "tests/test_existant.py"]
+}

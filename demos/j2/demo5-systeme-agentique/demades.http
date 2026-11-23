@@ -1,0 +1,86 @@
+# Vérifications en direct de la démo 5, avec l'extension REST Client.
+# Lancer le serveur depuis demos/j2/demo5-systeme-agentique/projet :
+#   uv run --with uvicorn uvicorn app.main:app --reload
+# --reload recharge l'API dès que le pilote écrit les fichiers des agents.
+# Les requêtes d'un ticket n'ont de sens qu'une fois ce ticket validé :
+# avant, la route ou le paramètre n'existe pas encore.
+
+@base = http://127.0.0.1:8000
+
+
+# ====================================================================
+# Ticket 1 - filtre de statut
+# ====================================================================
+
+### Sans filtre : HTTP 200, demandes [1, 2, 3] dans cet ordre
+GET {{base}}/api/demandes
+
+### statut=en_attente : HTTP 200, demandes [1, 3] dans cet ordre
+GET {{base}}/api/demandes?statut=en_attente
+
+### statut=livree : HTTP 200, demande [2]
+GET {{base}}/api/demandes?statut=livree
+
+### statut=refusee, valide mais sans demande : HTTP 200, []
+GET {{base}}/api/demandes?statut=refusee
+
+### statut=urgente, valeur inconnue : HTTP 422
+GET {{base}}/api/demandes?statut=urgente
+
+### Cas limite, casse différente : HTTP 422 (la comparaison est exacte)
+GET {{base}}/api/demandes?statut=En_attente
+
+### Cas limite, valeur vide : HTTP 422
+GET {{base}}/api/demandes?statut=
+
+
+# ====================================================================
+# Ticket 2 - lire une demande par son identifiant
+# ====================================================================
+
+### Demande 2 : HTTP 200, la demande complète, identique à celle de la liste
+GET {{base}}/api/demandes/2
+
+### Demande absente : HTTP 404, {"detail": "Demande introuvable"}
+GET {{base}}/api/demandes/999
+
+### Entier valide mais absent : HTTP 404, pas 422
+GET {{base}}/api/demandes/0
+
+### Identifiant mal formé : HTTP 422, pas 404
+GET {{base}}/api/demandes/abc
+
+### Non-régression : la liste filtrée répond toujours [1, 3]
+GET {{base}}/api/demandes?statut=en_attente
+
+
+# ====================================================================
+# Ticket 3 - pagination
+# ====================================================================
+
+### Sans pagination : réponse inchangée, [1, 2, 3]
+GET {{base}}/api/demandes
+
+### offset=1&limit=1 : HTTP 200, uniquement la demande 2
+GET {{base}}/api/demandes?offset=1&limit=1
+
+### offset=0&limit=2 : HTTP 200, demandes [1, 2]
+GET {{base}}/api/demandes?offset=0&limit=2
+
+### Filtre puis pagination : HTTP 200, uniquement la demande 3
+GET {{base}}/api/demandes?statut=en_attente&offset=1&limit=1
+
+### offset au-delà de la dernière demande : HTTP 200, []
+GET {{base}}/api/demandes?offset=10
+
+### limit=100, borne haute incluse : HTTP 200, [1, 2, 3]
+GET {{base}}/api/demandes?limit=100
+
+### offset=-1 : HTTP 422
+GET {{base}}/api/demandes?offset=-1
+
+### limit=0 : HTTP 422
+GET {{base}}/api/demandes?limit=0
+
+### limit=101 : HTTP 422
+GET {{base}}/api/demandes?limit=101
