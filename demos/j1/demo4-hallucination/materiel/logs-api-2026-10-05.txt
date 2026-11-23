@@ -1,0 +1,541 @@
+2026-10-05 08:00:00.000 INFO  service demarre version=1.0.0 env=production site=lyon-pilote
+2026-10-05 08:00:01.212 INFO  db: pool de connexions pret DB_POOL_MAX=50
+2026-10-05 08:00:01.530 INFO  cache initialise: 500 entrees maximum
+2026-10-05 08:00:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 08:01:00.000 INFO  req=c03cb6 GET   /api/demandes 200 145ms user=u1027
+2026-10-05 08:02:57.406 INFO  req=9f56de GET   /api/demandes/290 200 46ms user=u1102
+2026-10-05 08:03:09.987 INFO  req=059be5 GET   /api/demandes/61 200 43ms user=u1069
+2026-10-05 08:03:11.816 INFO  req=430e1e GET   /api/demandes/350 200 69ms user=u1097
+2026-10-05 08:03:28.392 INFO  req=003db9 GET   /api/demandes 200 79ms user=u1216
+2026-10-05 08:03:37.994 INFO  req=6be235 GET   /api/catalogue 200 45ms user=u1156
+2026-10-05 08:03:44.874 INFO  req=6d2e3c GET   /api/demandes/296 200 17ms user=u1052
+2026-10-05 08:04:02.009 INFO  req=260828 POST  /api/demandes 201 110ms user=u1169
+2026-10-05 08:04:04.596 INFO  req=e80ae4 POST  /api/demandes 201 188ms user=u1008
+2026-10-05 08:04:08.601 INFO  req=4eead3 GET   /api/demandes/295 200 61ms user=u1070
+2026-10-05 08:04:19.233 INFO  req=64a76a PATCH /api/demandes/128/statut 200 40ms user=u1098
+2026-10-05 08:04:54.397 INFO  req=184504 GET   /api/catalogue 200 147ms user=u1041
+2026-10-05 08:04:57.039 INFO  req=fb6449 GET   /api/demandes/131 200 62ms user=u1123
+2026-10-05 08:05:07.179 INFO  req=74f05d GET   /api/catalogue 200 72ms user=u1036
+2026-10-05 08:05:26.669 INFO  req=6cbfb9 PATCH /api/demandes/315/statut 200 55ms user=u1038
+2026-10-05 08:06:41.208 INFO  req=7f8552 POST  /api/demandes 201 103ms user=u1036
+2026-10-05 08:06:43.180 INFO  req=2f33ce GET   /api/demandes 200 58ms user=u1272
+2026-10-05 08:06:56.912 INFO  req=11f613 GET   /api/demandes/170 200 86ms user=u1268
+2026-10-05 08:08:14.486 INFO  req=0ae27b GET   /api/catalogue 200 48ms user=u1160
+2026-10-05 08:08:41.076 INFO  req=2515d0 GET   /api/demandes/375 200 52ms user=u1160
+2026-10-05 08:08:43.559 INFO  req=aee80a GET   /api/demandes?statut=en_attente 200 63ms user=u1023
+2026-10-05 08:08:56.701 INFO  req=0770ce GET   /api/demandes/40 200 15ms user=u1214
+2026-10-05 08:09:26.391 INFO  req=24fdd5 GET   /api/demandes?statut=en_attente 200 185ms user=u1007
+2026-10-05 08:09:28.654 INFO  req=a90967 GET   /api/demandes 200 131ms user=u1132
+2026-10-05 08:09:43.752 INFO  req=2ae580 POST  /api/demandes 201 147ms user=u1235
+2026-10-05 08:10:05.526 INFO  req=0b69ae GET   /api/demandes 200 148ms user=u1045
+2026-10-05 08:10:13.715 INFO  req=05ca0e GET   /api/demandes 200 90ms user=u1249
+2026-10-05 08:10:27.146 INFO  req=af5f57 POST  /api/demandes 201 167ms user=u1104
+2026-10-05 08:10:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 08:10:59.452 INFO  req=65a28c GET   /api/demandes/124 200 63ms user=u1168
+2026-10-05 08:11:29.823 INFO  req=706c74 PATCH /api/demandes/103/statut 200 69ms user=u1110
+2026-10-05 08:11:56.324 INFO  req=b394dd GET   /api/demandes 200 152ms user=u1069
+2026-10-05 08:12:50.869 INFO  req=569810 GET   /api/demandes 200 95ms user=u1033
+2026-10-05 08:12:54.482 INFO  req=c3dd58 GET   /api/demandes 200 130ms user=u1110
+2026-10-05 08:13:23.505 INFO  req=101ee7 POST  /api/demandes 201 117ms user=u1232
+2026-10-05 08:13:33.622 INFO  req=9e3939 GET   /api/demandes 200 115ms user=u1144
+2026-10-05 08:14:05.577 INFO  req=e8dfcb GET   /api/demandes 200 128ms user=u1070
+2026-10-05 08:14:11.787 INFO  req=3b093c PATCH /api/demandes/122/statut 200 26ms user=u1073
+2026-10-05 08:14:29.645 INFO  req=661014 GET   /api/demandes/328 200 21ms user=u1189
+2026-10-05 08:15:21.262 INFO  req=128587 GET   /api/demandes 200 145ms user=u1006
+2026-10-05 08:15:27.278 INFO  req=5181a9 PATCH /api/demandes/277/statut 200 84ms user=u1267
+2026-10-05 08:15:42.810 INFO  req=c6a44a POST  /api/demandes 201 57ms user=u1115
+2026-10-05 08:15:46.464 INFO  req=afaa7c GET   /api/demandes 200 121ms user=u1004
+2026-10-05 08:16:05.666 INFO  req=3f394d GET   /api/catalogue 200 224ms user=u1051
+2026-10-05 08:16:12.921 INFO  req=a40ac7 GET   /api/demandes?statut=en_attente 200 109ms user=u1045
+2026-10-05 08:16:22.735 INFO  req=130357 PATCH /api/demandes/179/statut 200 30ms user=u1259
+2026-10-05 08:16:40.563 INFO  req=20cc0f GET   /api/demandes/141 200 15ms user=u1250
+2026-10-05 08:16:57.035 INFO  req=f0ed80 GET   /api/demandes 200 60ms user=u1172
+2026-10-05 08:17:01.528 INFO  req=e15d13 GET   /api/catalogue 200 255ms user=u1266
+2026-10-05 08:18:28.504 INFO  req=94911e GET   /api/demandes/353 200 40ms user=u1045
+2026-10-05 08:19:21.575 INFO  req=8355b9 POST  /api/demandes 201 166ms user=u1268
+2026-10-05 08:19:32.390 INFO  req=4844db GET   /api/catalogue 200 117ms user=u1107
+2026-10-05 08:20:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 08:21:16.536 INFO  req=d2798a GET   /api/demandes 200 76ms user=u1255
+2026-10-05 08:21:39.515 INFO  req=1680ff GET   /api/demandes 200 32ms user=u1194
+2026-10-05 08:22:01.410 INFO  req=556309 GET   /api/demandes/289 200 74ms user=u1063
+2026-10-05 08:22:03.551 INFO  req=fc6f4a GET   /api/demandes/410 200 46ms user=u1207
+2026-10-05 08:22:07.444 INFO  req=a269f5 GET   /api/catalogue 200 174ms user=u1244
+2026-10-05 08:22:10.429 INFO  req=0baa99 POST  /api/demandes 201 68ms user=u1134
+2026-10-05 08:22:11.159 INFO  req=b5f00d GET   /api/demandes 200 107ms user=u1146
+2026-10-05 08:22:19.510 INFO  req=804891 GET   /api/demandes 200 155ms user=u1063
+2026-10-05 08:22:57.718 INFO  req=51c7ef GET   /api/demandes/224 200 60ms user=u1012
+2026-10-05 08:23:20.884 INFO  req=45ded5 POST  /api/demandes 201 170ms user=u1112
+2026-10-05 08:23:28.758 INFO  req=a14629 POST  /api/demandes 201 81ms user=u1178
+2026-10-05 08:24:35.199 INFO  req=4492c3 GET   /api/demandes 200 49ms user=u1100
+2026-10-05 08:25:41.135 INFO  req=d7dff7 POST  /api/demandes 201 134ms user=u1133
+2026-10-05 08:26:04.721 INFO  req=312e5c GET   /api/demandes 200 29ms user=u1207
+2026-10-05 08:26:11.698 INFO  req=afded3 GET   /api/demandes?statut=en_attente 200 59ms user=u1185
+2026-10-05 08:26:32.702 INFO  req=365c59 PATCH /api/demandes/412/statut 200 81ms user=u1037
+2026-10-05 08:26:33.780 INFO  req=3ada55 GET   /api/demandes/264 200 30ms user=u1247
+2026-10-05 08:26:40.860 INFO  req=1fb744 GET   /api/demandes 200 49ms user=u1145
+2026-10-05 08:26:45.697 INFO  req=da56ca GET   /api/demandes/392 200 53ms user=u1050
+2026-10-05 08:27:07.440 INFO  req=14edea GET   /api/demandes 200 28ms user=u1192
+2026-10-05 08:28:03.185 INFO  req=cf83c1 GET   /api/demandes?statut=en_attente 200 124ms user=u1185
+2026-10-05 08:29:19.619 INFO  req=a5bb93 GET   /api/demandes 200 28ms user=u1263
+2026-10-05 08:30:26.820 INFO  req=61c3ea PATCH /api/demandes/323/statut 200 92ms user=u1208
+2026-10-05 08:30:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 08:30:47.349 INFO  req=51f05c PATCH /api/demandes/133/statut 200 34ms user=u1144
+2026-10-05 08:31:37.415 INFO  req=dd0068 GET   /api/demandes 200 119ms user=u1169
+2026-10-05 08:32:20.415 INFO  req=aef5bf GET   /api/demandes 200 43ms user=u1095
+2026-10-05 08:32:31.103 INFO  req=76d6c1 GET   /api/demandes 200 37ms user=u1183
+2026-10-05 08:32:40.984 INFO  req=5d2a0a POST  /api/demandes 201 90ms user=u1173
+2026-10-05 08:33:03.398 INFO  req=0baf21 GET   /api/demandes/255 200 27ms user=u1110
+2026-10-05 08:33:07.110 INFO  req=19d57d POST  /api/demandes 201 148ms user=u1132
+2026-10-05 08:33:50.663 INFO  req=807452 GET   /api/demandes?statut=en_attente 200 96ms user=u1051
+2026-10-05 08:34:00.349 INFO  req=3303f9 GET   /api/demandes/261 200 78ms user=u1213
+2026-10-05 08:34:30.828 INFO  req=51e28d POST  /api/demandes 201 133ms user=u1024
+2026-10-05 08:34:45.993 INFO  req=dbf1b0 GET   /api/demandes 200 39ms user=u1254
+2026-10-05 08:36:13.430 INFO  req=bb2cb0 GET   /api/demandes 200 104ms user=u1205
+2026-10-05 08:36:36.494 INFO  req=97929e POST  /api/demandes 201 204ms user=u1146
+2026-10-05 08:36:37.791 INFO  req=d14efd GET   /api/demandes 200 65ms user=u1022
+2026-10-05 08:37:19.399 INFO  req=19ae56 GET   /api/demandes 200 126ms user=u1162
+2026-10-05 08:37:45.740 INFO  req=728975 GET   /api/catalogue 200 244ms user=u1038
+2026-10-05 08:38:02.489 INFO  req=326b0b GET   /api/demandes 200 36ms user=u1125
+2026-10-05 08:39:25.740 INFO  req=7d88c1 GET   /api/catalogue 200 249ms user=u1074
+2026-10-05 08:39:53.117 INFO  req=3c65e5 GET   /api/demandes 200 141ms user=u1214
+2026-10-05 08:39:59.053 INFO  req=ba02ba GET   /api/demandes?statut=en_attente 200 61ms user=u1080
+2026-10-05 08:40:16.683 INFO  req=ba60d1 GET   /api/demandes/308 200 86ms user=u1135
+2026-10-05 08:40:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 08:41:01.543 INFO  req=41fb75 PATCH /api/demandes/71/statut 200 113ms user=u1149
+2026-10-05 08:41:09.116 INFO  req=614ae8 GET   /api/demandes/159 200 57ms user=u1260
+2026-10-05 08:41:12.189 WARN  sso: renouvellement du jeton lent (2310ms)
+2026-10-05 08:41:39.771 INFO  req=645732 GET   /api/demandes 200 153ms user=u1128
+2026-10-05 08:42:43.040 INFO  req=0dc656 POST  /api/demandes 201 104ms user=u1005
+2026-10-05 08:43:12.104 INFO  req=2c4219 GET   /api/demandes 200 43ms user=u1143
+2026-10-05 08:44:25.164 INFO  req=6bd80a GET   /api/demandes/324 200 73ms user=u1192
+2026-10-05 08:44:37.506 INFO  req=6d23ea POST  /api/demandes 201 65ms user=u1039
+2026-10-05 08:44:55.765 INFO  req=4e932b GET   /api/demandes 200 119ms user=u1078
+2026-10-05 08:45:27.610 INFO  req=bd0fb6 GET   /api/demandes?statut=en_attente 200 139ms user=u1095
+2026-10-05 08:45:53.473 INFO  req=2a81c8 GET   /api/catalogue 200 179ms user=u1041
+2026-10-05 08:46:10.581 INFO  req=04c201 GET   /api/demandes/351 200 50ms user=u1238
+2026-10-05 08:46:12.218 INFO  req=9b8c5c GET   /api/catalogue 200 217ms user=u1042
+2026-10-05 08:46:32.782 INFO  req=a7752e POST  /api/demandes 201 71ms user=u1145
+2026-10-05 08:46:46.120 INFO  req=e04094 GET   /api/demandes 200 96ms user=u1226
+2026-10-05 08:47:08.312 INFO  req=b92ffb GET   /api/demandes/114 200 78ms user=u1205
+2026-10-05 08:47:19.633 ERROR req=2a99a5 GET   /api/catalogue 500 38ms user=u1056 erreur="KeyError: 'prix_unitaire'"
+2026-10-05 08:48:01.024 INFO  req=c670de GET   /api/demandes?statut=en_attente 200 179ms user=u1203
+2026-10-05 08:48:48.756 INFO  req=5ac589 GET   /api/demandes/409 200 81ms user=u1200
+2026-10-05 08:48:54.777 INFO  req=513f0e GET   /api/demandes/145 200 40ms user=u1012
+2026-10-05 08:49:19.989 INFO  req=9c672c GET   /api/demandes 200 41ms user=u1217
+2026-10-05 08:50:06.086 INFO  req=a0ab55 GET   /api/demandes?statut=en_attente 200 56ms user=u1141
+2026-10-05 08:50:08.649 INFO  req=70decd POST  /api/demandes 201 201ms user=u1050
+2026-10-05 08:50:28.929 INFO  req=aa7a93 GET   /api/demandes/392 200 62ms user=u1236
+2026-10-05 08:50:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 08:51:02.505 INFO  req=b2c5cc GET   /api/demandes/413 200 17ms user=u1038
+2026-10-05 08:52:00.825 INFO  req=0c774b GET   /api/demandes?statut=en_attente 200 148ms user=u1046
+2026-10-05 08:52:23.727 INFO  req=d74617 GET   /api/demandes 200 132ms user=u1057
+2026-10-05 08:52:40.823 WARN  sso: renouvellement du jeton lent (2875ms)
+2026-10-05 08:53:37.251 INFO  req=68a27f POST  /api/demandes 201 210ms user=u1193
+2026-10-05 08:53:52.541 INFO  req=9dec73 GET   /api/demandes 200 145ms user=u1031
+2026-10-05 08:54:31.310 INFO  req=08ca82 POST  /api/demandes 201 50ms user=u1092
+2026-10-05 08:54:57.931 INFO  req=5e7c09 PATCH /api/demandes/161/statut 200 45ms user=u1056
+2026-10-05 08:55:11.602 INFO  req=72aacb GET   /api/demandes 200 155ms user=u1242
+2026-10-05 08:55:29.915 INFO  req=f57fdc GET   /api/demandes 200 104ms user=u1089
+2026-10-05 08:56:27.496 INFO  req=2f518f GET   /api/catalogue 200 209ms user=u1176
+2026-10-05 08:56:47.226 INFO  req=c51ba5 GET   /api/demandes?statut=en_attente 200 64ms user=u1112
+2026-10-05 08:58:39.813 INFO  req=f1fea8 GET   /api/demandes/141 200 42ms user=u1030
+2026-10-05 08:59:50.460 INFO  req=50885d PATCH /api/demandes/366/statut 200 97ms user=u1216
+2026-10-05 09:00:06.790 INFO  req=4321b1 GET   /api/demandes 200 157ms user=u1133
+2026-10-05 09:00:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 09:00:37.634 INFO  req=4d2270 GET   /api/demandes 200 38ms user=u1274
+2026-10-05 09:01:03.182 INFO  req=2a33ce GET   /api/demandes 200 57ms user=u1077
+2026-10-05 09:01:16.629 INFO  req=2a6c7b POST  /api/demandes 201 157ms user=u1050
+2026-10-05 09:02:49.600 INFO  req=d57d28 GET   /api/demandes/260 200 14ms user=u1156
+2026-10-05 09:02:56.698 INFO  req=130ec0 GET   /api/demandes 200 78ms user=u1226
+2026-10-05 09:03:07.524 WARN  sso: renouvellement du jeton lent (3420ms)
+2026-10-05 09:03:20.538 INFO  req=9c84e3 GET   /api/demandes/160 200 51ms user=u1162
+2026-10-05 09:06:17.683 INFO  req=362520 POST  /api/demandes 201 54ms user=u1185
+2026-10-05 09:06:50.692 WARN  req=f354ca GET   /api/demandes/402 404 12ms user=u1063
+2026-10-05 09:06:58.577 INFO  req=4de43f GET   /api/demandes 200 77ms user=u1006
+2026-10-05 09:07:08.385 INFO  req=c8ce76 GET   /api/catalogue 200 126ms user=u1153
+2026-10-05 09:07:32.089 INFO  req=381b61 GET   /api/demandes 200 121ms user=u1103
+2026-10-05 09:07:44.967 INFO  req=e4ca60 GET   /api/demandes 200 109ms user=u1241
+2026-10-05 09:08:37.094 INFO  req=5bc5ef GET   /api/demandes 200 58ms user=u1049
+2026-10-05 09:08:43.411 INFO  req=336bd7 GET   /api/demandes 200 48ms user=u1238
+2026-10-05 09:08:51.160 INFO  req=2536a4 GET   /api/catalogue 200 144ms user=u1223
+2026-10-05 09:09:03.843 INFO  req=c59aa5 GET   /api/demandes/262 200 38ms user=u1072
+2026-10-05 09:09:23.943 INFO  req=7d775e GET   /api/demandes/8 200 90ms user=u1206
+2026-10-05 09:09:55.487 WARN  sso: renouvellement du jeton lent (4980ms)
+2026-10-05 09:09:56.623 INFO  req=e1e957 GET   /api/demandes/134 200 36ms user=u1170
+2026-10-05 09:09:59.386 INFO  req=349045 GET   /api/demandes 200 100ms user=u1171
+2026-10-05 09:10:27.162 INFO  req=77c3ba GET   /api/demandes 200 101ms user=u1276
+2026-10-05 09:10:30.000 WARN  healthcheck db=ok sso=lent
+2026-10-05 09:10:40.512 INFO  req=64f7cf GET   /api/demandes/294 200 78ms user=u1102
+2026-10-05 09:11:05.027 INFO  req=f4ad51 POST  /api/demandes 201 56ms user=u1102
+2026-10-05 09:11:30.713 INFO  req=884725 GET   /api/demandes?statut=en_attente 200 122ms user=u1047
+2026-10-05 09:11:49.127 INFO  req=208e7c GET   /api/demandes/374 200 42ms user=u1070
+2026-10-05 09:12:13.270 WARN  req=01f1ed GET   /api/demandes 401 9ms user=u1172 erreur="jeton expire"
+2026-10-05 09:12:23.918 WARN  req=270d09 GET   /api/demandes?statut=en_attente 401 7ms user=u1186 erreur="jeton expire"
+2026-10-05 09:12:42.413 WARN  req=c36685 GET   /api/demandes 401 9ms user=u1071 erreur="jeton expire"
+2026-10-05 09:13:11.655 WARN  req=49358c PATCH /api/demandes/9/statut 401 3ms user=u1082 erreur="jeton expire"
+2026-10-05 09:13:34.121 WARN  req=aa08b7 GET   /api/demandes/89 401 4ms user=u1173 erreur="jeton expire"
+2026-10-05 09:13:35.802 INFO  req=347d76 GET   /api/demandes 200 128ms user=u1075
+2026-10-05 09:13:54.421 WARN  req=d16b20 GET   /api/catalogue 401 6ms user=u1209 erreur="jeton expire"
+2026-10-05 09:14:02.644 WARN  sso: renouvellement du jeton lent (5120ms)
+2026-10-05 09:14:46.120 WARN  req=0c6589 GET   /api/demandes/270 401 6ms user=u1170 erreur="jeton expire"
+2026-10-05 09:14:57.055 WARN  req=9c0884 GET   /api/demandes 401 9ms user=u1222 erreur="jeton expire"
+2026-10-05 09:16:01.898 INFO  req=7c14e5 GET   /api/demandes 200 139ms user=u1064
+2026-10-05 09:16:22.406 INFO  req=35f376 GET   /api/catalogue 200 217ms user=u1244
+2026-10-05 09:16:31.402 INFO  sso: cle de signature rechargee, renouvellement retabli
+2026-10-05 09:16:44.244 INFO  req=bccf96 GET   /api/demandes/337 200 42ms user=u1203
+2026-10-05 09:17:44.431 INFO  req=24bb3c GET   /api/demandes/85 200 65ms user=u1114
+2026-10-05 09:17:47.811 INFO  req=004b92 GET   /api/demandes 200 141ms user=u1276
+2026-10-05 09:17:58.745 INFO  req=201198 GET   /api/demandes 200 69ms user=u1167
+2026-10-05 09:18:16.460 INFO  req=762aae PATCH /api/demandes/204/statut 200 65ms user=u1073
+2026-10-05 09:18:17.031 INFO  req=f1fdf7 GET   /api/demandes/161 200 53ms user=u1158
+2026-10-05 09:19:20.207 INFO  req=a1baa1 GET   /api/demandes 200 75ms user=u1031
+2026-10-05 09:20:14.362 INFO  req=676de6 GET   /api/catalogue 200 84ms user=u1009
+2026-10-05 09:20:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 09:20:37.241 INFO  req=9cb677 GET   /api/demandes 200 52ms user=u1026
+2026-10-05 09:21:16.320 INFO  req=450ef7 GET   /api/catalogue 200 147ms user=u1141
+2026-10-05 09:21:28.979 INFO  req=287151 GET   /api/catalogue 200 146ms user=u1228
+2026-10-05 09:21:34.882 INFO  req=5cae1f GET   /api/demandes 200 93ms user=u1101
+2026-10-05 09:22:13.513 INFO  req=3b44d8 POST  /api/demandes 201 130ms user=u1140
+2026-10-05 09:22:40.234 INFO  req=73aff1 GET   /api/catalogue 200 210ms user=u1093
+2026-10-05 09:22:49.655 INFO  req=25cab1 POST  /api/demandes 201 54ms user=u1237
+2026-10-05 09:23:12.046 INFO  req=d8ce21 GET   /api/demandes 200 89ms user=u1146
+2026-10-05 09:24:00.089 INFO  req=5bd10b GET   /api/demandes 200 87ms user=u1098
+2026-10-05 09:24:09.561 INFO  req=ec5b11 GET   /api/demandes 200 33ms user=u1078
+2026-10-05 09:25:24.598 INFO  req=5c1b34 GET   /api/demandes?statut=en_attente 200 45ms user=u1256
+2026-10-05 09:25:26.795 INFO  req=105c30 POST  /api/demandes 201 117ms user=u1185
+2026-10-05 09:25:48.517 INFO  req=590c5e PATCH /api/demandes/325/statut 200 115ms user=u1267
+2026-10-05 09:26:15.789 INFO  req=e18078 GET   /api/demandes 200 85ms user=u1224
+2026-10-05 09:26:39.262 INFO  req=fa6da4 PATCH /api/demandes/406/statut 200 53ms user=u1121
+2026-10-05 09:27:02.873 INFO  req=1ae366 GET   /api/demandes/256 200 16ms user=u1134
+2026-10-05 09:27:28.893 INFO  req=091b99 GET   /api/catalogue 200 78ms user=u1167
+2026-10-05 09:27:57.825 INFO  req=5b3f0e GET   /api/demandes/227 200 15ms user=u1135
+2026-10-05 09:28:23.556 INFO  req=d9c8c2 GET   /api/demandes/370 200 30ms user=u1122
+2026-10-05 09:28:24.321 INFO  req=8789d5 PATCH /api/demandes/379/statut 200 119ms user=u1270
+2026-10-05 09:29:07.510 INFO  req=c1fa2f GET   /api/demandes 200 68ms user=u1262
+2026-10-05 09:29:16.163 INFO  req=ef064d GET   /api/demandes/338 200 19ms user=u1233
+2026-10-05 09:29:29.221 INFO  req=44e286 POST  /api/demandes 201 67ms user=u1022
+2026-10-05 09:29:33.466 INFO  req=4878f0 GET   /api/demandes/21 200 42ms user=u1002
+2026-10-05 09:29:36.569 INFO  req=118b8f GET   /api/demandes 200 44ms user=u1218
+2026-10-05 09:30:10.734 INFO  req=7bbdc7 POST  /api/demandes 201 110ms user=u1118
+2026-10-05 09:30:26.088 INFO  req=6fc83b GET   /api/catalogue 200 126ms user=u1159
+2026-10-05 09:30:27.412 INFO  req=5ac460 GET   /api/demandes/30 200 84ms user=u1176
+2026-10-05 09:30:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 09:30:46.402 INFO  req=c1e8a5 GET   /api/catalogue 200 137ms user=u1110
+2026-10-05 09:31:14.096 INFO  req=223715 GET   /api/demandes/export.csv 200 18432ms user=u1093
+2026-10-05 09:31:32.220 INFO  req=f5db38 GET   /api/demandes/127 200 82ms user=u1095
+2026-10-05 09:31:39.219 INFO  req=5cfaa0 GET   /api/demandes/389 200 72ms user=u1158
+2026-10-05 09:32:38.209 INFO  req=b9c330 GET   /api/demandes/215 200 18ms user=u1038
+2026-10-05 09:34:07.635 INFO  req=c931ed GET   /api/demandes 200 92ms user=u1094
+2026-10-05 09:34:32.665 INFO  req=4e9a05 POST  /api/demandes 201 61ms user=u1138
+2026-10-05 09:35:11.795 INFO  req=0a7184 GET   /api/demandes?statut=en_attente 200 60ms user=u1124
+2026-10-05 09:38:18.858 INFO  req=a68722 GET   /api/demandes?statut=en_attente 200 127ms user=u1043
+2026-10-05 09:38:27.899 INFO  req=fa1303 GET   /api/demandes/29 200 62ms user=u1155
+2026-10-05 09:38:29.154 INFO  req=d91d8c GET   /api/demandes/66 200 38ms user=u1017
+2026-10-05 09:38:48.710 INFO  req=e74441 GET   /api/demandes 200 105ms user=u1134
+2026-10-05 09:39:21.150 INFO  req=e61403 GET   /api/catalogue 200 176ms user=u1144
+2026-10-05 09:39:36.395 INFO  req=b09e26 GET   /api/demandes/183 200 25ms user=u1116
+2026-10-05 09:40:04.143 INFO  req=05d163 GET   /api/demandes 200 148ms user=u1013
+2026-10-05 09:40:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 09:40:53.999 INFO  req=b4ed5b POST  /api/demandes 201 90ms user=u1035
+2026-10-05 09:41:26.978 INFO  req=84e810 PATCH /api/demandes/192/statut 200 120ms user=u1121
+2026-10-05 09:41:29.437 INFO  req=fad5b8 GET   /api/demandes 200 40ms user=u1253
+2026-10-05 09:41:43.336 INFO  req=51334d GET   /api/demandes 200 81ms user=u1144
+2026-10-05 09:43:01.206 INFO  req=af04f4 GET   /api/demandes/86 200 42ms user=u1180
+2026-10-05 09:44:12.823 INFO  req=0bcc90 GET   /api/demandes 200 103ms user=u1132
+2026-10-05 09:45:22.123 INFO  req=8b43f8 GET   /api/demandes?statut=en_attente 200 133ms user=u1033
+2026-10-05 09:45:23.507 INFO  req=a6ac0f PATCH /api/demandes/154/statut 200 112ms user=u1241
+2026-10-05 09:46:28.074 INFO  req=bf1d69 GET   /api/demandes 200 107ms user=u1178
+2026-10-05 09:46:53.268 INFO  req=aed11d PATCH /api/demandes/96/statut 200 69ms user=u1241
+2026-10-05 09:48:26.371 INFO  req=186922 GET   /api/demandes 200 44ms user=u1111
+2026-10-05 09:48:55.420 INFO  req=ed8cf6 POST  /api/demandes 201 105ms user=u1033
+2026-10-05 09:49:58.391 INFO  req=458e00 GET   /api/catalogue 200 49ms user=u1198
+2026-10-05 09:50:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 09:50:32.279 INFO  req=0acdba GET   /api/demandes 200 146ms user=u1185
+2026-10-05 09:50:37.197 INFO  req=781705 GET   /api/demandes 200 81ms user=u1133
+2026-10-05 09:50:59.948 INFO  req=28783d GET   /api/demandes/202 200 42ms user=u1002
+2026-10-05 09:51:29.574 INFO  req=b17ebe GET   /api/catalogue 200 107ms user=u1171
+2026-10-05 09:51:32.019 INFO  req=50159e GET   /api/demandes 200 126ms user=u1107
+2026-10-05 09:53:11.844 INFO  req=965cf4 GET   /api/demandes 200 150ms user=u1171
+2026-10-05 09:53:25.292 INFO  req=795bf3 GET   /api/demandes?statut=en_attente 200 157ms user=u1274
+2026-10-05 09:53:56.370 INFO  req=408306 GET   /api/demandes?statut=en_attente 200 161ms user=u1092
+2026-10-05 09:54:59.070 INFO  req=e73591 PATCH /api/demandes/361/statut 200 34ms user=u1159
+2026-10-05 09:55:20.695 INFO  req=81fe9f GET   /api/demandes/84 200 73ms user=u1212
+2026-10-05 09:55:35.757 INFO  req=80ee0a PATCH /api/demandes/201/statut 200 111ms user=u1130
+2026-10-05 09:55:49.699 INFO  req=423ca7 GET   /api/demandes?statut=en_attente 200 82ms user=u1171
+2026-10-05 09:56:14.430 INFO  req=89b26b POST  /api/demandes 201 194ms user=u1065
+2026-10-05 09:57:02.128 INFO  req=5e89f3 GET   /api/demandes 200 84ms user=u1150
+2026-10-05 09:57:40.018 INFO  deploiement v1.0.1 demarre par=deploy-bot (correctif libelles)
+2026-10-05 09:58:02.114 INFO  config rechargee par=deploy-bot DB_POOL_MAX=10 (avant: 50)
+2026-10-05 09:58:09.870 INFO  deploiement v1.0.1 termine
+2026-10-05 09:58:51.483 INFO  req=d6aef7 GET   /api/demandes/405 200 46ms user=u1069
+2026-10-05 09:59:00.681 INFO  req=508a48 GET   /api/demandes?statut=en_attente 200 42ms user=u1072
+2026-10-05 09:59:38.121 INFO  req=b68256 GET   /api/catalogue 200 113ms user=u1100
+2026-10-05 10:00:17.820 INFO  req=f7518f GET   /api/demandes 200 31ms user=u1169
+2026-10-05 10:00:23.068 INFO  req=c88ac4 GET   /api/demandes 200 82ms user=u1146
+2026-10-05 10:00:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 10:01:01.417 INFO  req=4b359c POST  /api/demandes 201 2898ms user=u1200
+2026-10-05 10:01:18.853 INFO  req=a5b620 GET   /api/demandes 200 1192ms user=u1129
+2026-10-05 10:01:40.000 WARN  db: pool sature (10/10 connexions, 12 requetes en attente)
+2026-10-05 10:02:23.276 INFO  req=66f694 GET   /api/demandes/74 200 567ms user=u1141
+2026-10-05 10:02:36.265 INFO  req=020ebc GET   /api/demandes/78 200 120ms user=u1033
+2026-10-05 10:02:42.495 INFO  req=b3eada GET   /api/demandes 200 1548ms user=u1104
+2026-10-05 10:03:31.405 INFO  req=e2eb32 GET   /api/demandes/111 200 470ms user=u1130
+2026-10-05 10:03:56.963 INFO  req=263974 POST  /api/demandes 201 574ms user=u1091
+2026-10-05 10:04:06.024 INFO  req=209de0 POST  /api/demandes 201 306ms user=u1159
+2026-10-05 10:04:57.096 WARN  db: pool sature (10/10 connexions, 10 requetes en attente)
+2026-10-05 10:05:42.011 INFO  req=9dab66 POST  /api/demandes 201 1649ms user=u1136
+2026-10-05 10:06:30.847 INFO  req=0c0782 POST  /api/demandes 201 2686ms user=u1052
+2026-10-05 10:06:31.144 INFO  req=bab78b GET   /api/demandes 200 1190ms user=u1199
+2026-10-05 10:07:00.460 INFO  req=303483 GET   /api/demandes?statut=en_attente 200 517ms user=u1143
+2026-10-05 10:07:09.218 INFO  req=6976d8 POST  /api/demandes 201 658ms user=u1109
+2026-10-05 10:07:15.108 INFO  req=04d57e GET   /api/demandes 200 684ms user=u1191
+2026-10-05 10:07:30.053 INFO  req=68cca5 GET   /api/demandes?statut=en_attente 200 3006ms user=u1165
+2026-10-05 10:07:30.178 INFO  req=ffa330 GET   /api/demandes 200 963ms user=u1056
+2026-10-05 10:07:45.722 INFO  req=5dec5c GET   /api/catalogue 200 627ms user=u1140
+2026-10-05 10:08:30.537 INFO  req=1c5084 GET   /api/demandes/export.csv 200 4318ms user=u1076
+2026-10-05 10:08:37.631 INFO  req=3a703d GET   /api/demandes?statut=en_attente 200 2850ms user=u1226
+2026-10-05 10:08:41.756 INFO  req=75c607 POST  /api/demandes 201 1752ms user=u1233
+2026-10-05 10:08:44.241 WARN  db: pool sature (10/10 connexions, 4 requetes en attente)
+2026-10-05 10:08:55.554 INFO  req=17a246 GET   /api/demandes/264 200 1027ms user=u1017
+2026-10-05 10:09:22.953 INFO  req=a03cdd GET   /api/demandes?statut=en_attente 200 1490ms user=u1275
+2026-10-05 10:09:29.480 INFO  req=fb6eee GET   /api/demandes/export.csv 200 4541ms user=u1206
+2026-10-05 10:09:33.191 INFO  req=80e8c3 PATCH /api/demandes/333/statut 200 476ms user=u1073
+2026-10-05 10:10:30.000 WARN  healthcheck db=lent (2326ms) sso=ok
+2026-10-05 10:12:05.066 INFO  req=b29251 GET   /api/demandes 200 2016ms user=u1020
+2026-10-05 10:12:23.549 INFO  req=7a20cc GET   /api/demandes 200 1200ms user=u1219
+2026-10-05 10:12:25.568 ERROR req=1ca498 GET   /api/demandes/388 500 5008ms user=u1252 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 10:13:09.562 INFO  req=bb50c5 GET   /api/catalogue 200 4374ms user=u1034
+2026-10-05 10:13:15.341 INFO  req=d50241 GET   /api/demandes 200 567ms user=u1178
+2026-10-05 10:13:21.397 ERROR req=69d984 GET   /api/demandes 500 5011ms user=u1239 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 10:13:32.070 WARN  db: pool sature (10/10 connexions, 14 requetes en attente)
+2026-10-05 10:13:44.323 INFO  req=c1a5b2 GET   /api/catalogue 200 2196ms user=u1101
+2026-10-05 10:13:44.347 INFO  req=418d11 POST  /api/demandes 201 3451ms user=u1143
+2026-10-05 10:13:49.594 INFO  req=b70f44 GET   /api/demandes/67 200 286ms user=u1143
+2026-10-05 10:14:00.008 INFO  req=d107b6 GET   /api/demandes/export.csv 200 4576ms user=u1106
+2026-10-05 10:14:02.322 ERROR req=7596c4 POST  /api/demandes 500 5013ms user=u1187 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 10:14:06.073 INFO  req=447e25 POST  /api/demandes 201 1560ms user=u1218
+2026-10-05 10:14:27.964 INFO  req=3c30c2 GET   /api/demandes 200 1965ms user=u1264
+2026-10-05 10:14:31.525 ERROR req=0f3ba4 POST  /api/demandes 500 5005ms user=u1187 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 10:14:38.893 INFO  req=f477f2 GET   /api/catalogue 200 1917ms user=u1041
+2026-10-05 10:14:53.761 INFO  req=e1bd78 GET   /api/demandes/113 200 220ms user=u1230
+2026-10-05 10:15:09.071 ERROR req=374232 POST  /api/demandes 500 5010ms user=u1187 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 10:15:25.274 ERROR req=43abf2 GET   /api/demandes 500 5006ms user=u1007 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 10:15:52.887 INFO  req=356ea8 GET   /api/demandes 200 1728ms user=u1216
+2026-10-05 10:16:16.101 ERROR req=b00fd6 GET   /api/demandes/108 500 5001ms user=u1046 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 10:18:33.835 INFO  req=252407 GET   /api/catalogue 200 2743ms user=u1012
+2026-10-05 10:18:44.112 WARN  db: pool sature (10/10 connexions, 12 requetes en attente)
+2026-10-05 10:18:47.475 INFO  req=75bc76 GET   /api/demandes/246 200 720ms user=u1032
+2026-10-05 10:19:18.717 INFO  req=cd75dd GET   /api/demandes 200 672ms user=u1030
+2026-10-05 10:20:05.954 INFO  req=ca0ebd GET   /api/demandes 200 1216ms user=u1108
+2026-10-05 10:20:08.813 INFO  req=f2902e GET   /api/demandes 200 1513ms user=u1086
+2026-10-05 10:20:30.000 WARN  healthcheck db=lent (2546ms) sso=ok
+2026-10-05 10:20:53.122 INFO  req=d36d64 GET   /api/demandes/80 200 354ms user=u1009
+2026-10-05 10:21:16.546 INFO  req=3fca5a GET   /api/catalogue 200 1755ms user=u1049
+2026-10-05 10:21:18.243 INFO  req=b49d5c GET   /api/demandes 200 1550ms user=u1046
+2026-10-05 10:22:03.252 INFO  req=eb33f6 GET   /api/demandes/239 200 312ms user=u1028
+2026-10-05 10:22:07.920 INFO  req=58e6f8 GET   /api/demandes 200 960ms user=u1258
+2026-10-05 10:22:23.626 INFO  req=4eb7e8 GET   /api/catalogue 200 1305ms user=u1061
+2026-10-05 10:22:56.099 WARN  db: pool sature (10/10 connexions, 10 requetes en attente)
+2026-10-05 10:23:11.112 ERROR req=0e9c7f POST  /api/demandes 500 5010ms user=u1193 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 10:23:26.505 INFO  req=281db1 GET   /api/demandes 200 360ms user=u1279
+2026-10-05 10:23:33.549 INFO  req=4698b8 GET   /api/demandes 200 981ms user=u1215
+2026-10-05 10:23:58.512 INFO  req=843d78 GET   /api/catalogue 200 1400ms user=u1050
+2026-10-05 10:24:05.086 INFO  req=196101 GET   /api/demandes/245 200 627ms user=u1197
+2026-10-05 10:24:16.543 INFO  req=7201b9 GET   /api/demandes 200 1464ms user=u1271
+2026-10-05 10:24:50.730 INFO  req=f98d16 GET   /api/demandes?statut=en_attente 200 1098ms user=u1161
+2026-10-05 10:25:30.382 INFO  req=7e1a9a GET   /api/demandes?statut=en_attente 200 341ms user=u1054
+2026-10-05 10:25:44.612 WARN  req=fec9a6 POST  /api/demandes 422 13ms user=u1155
+2026-10-05 10:25:48.776 ERROR req=8a4d36 POST  /api/demandes 500 5010ms user=u1028 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 10:26:38.966 INFO  req=cb1a44 GET   /api/demandes/192 200 368ms user=u1206
+2026-10-05 10:28:13.855 WARN  db: pool sature (10/10 connexions, 12 requetes en attente)
+2026-10-05 10:28:43.851 INFO  req=922ae7 GET   /api/demandes 200 848ms user=u1017
+2026-10-05 10:29:14.058 INFO  req=46ea19 GET   /api/demandes/export.csv 200 4130ms user=u1252
+2026-10-05 10:30:30.000 WARN  healthcheck db=lent (2353ms) sso=ok
+2026-10-05 10:30:32.654 INFO  req=abc10b POST  /api/demandes 201 3111ms user=u1109
+2026-10-05 10:31:06.935 INFO  req=47b0ea GET   /api/catalogue 200 1092ms user=u1039
+2026-10-05 10:31:21.458 INFO  req=3b5213 POST  /api/demandes 201 2516ms user=u1061
+2026-10-05 10:32:55.364 INFO  req=3a4e19 POST  /api/demandes 201 1105ms user=u1058
+2026-10-05 10:33:30.016 WARN  db: pool sature (10/10 connexions, 12 requetes en attente)
+2026-10-05 10:34:11.216 INFO  req=4f65db GET   /api/demandes 200 420ms user=u1166
+2026-10-05 10:35:13.483 INFO  req=fd25f0 GET   /api/demandes?statut=en_attente 200 2142ms user=u1222
+2026-10-05 10:35:33.706 INFO  req=a5ece7 PATCH /api/demandes/262/statut 200 264ms user=u1247
+2026-10-05 10:35:40.354 INFO  req=c6f0cc PATCH /api/demandes/334/statut 200 952ms user=u1180
+2026-10-05 10:35:58.602 INFO  req=a7f27f PATCH /api/demandes/184/statut 200 972ms user=u1076
+2026-10-05 10:36:01.501 INFO  req=171a43 GET   /api/demandes 200 1710ms user=u1134
+2026-10-05 10:36:03.867 WARN  db: pool sature (10/10 connexions, 11 requetes en attente)
+2026-10-05 10:36:10.065 INFO  req=216783 PATCH /api/demandes/131/statut 200 612ms user=u1194
+2026-10-05 10:36:34.999 INFO  req=346120 GET   /api/demandes/272 200 549ms user=u1234
+2026-10-05 10:37:09.512 ERROR req=aa83a6 PATCH /api/demandes/18/statut 500 5008ms user=u1181 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 10:37:29.457 INFO  req=4ff7f6 GET   /api/catalogue 200 2214ms user=u1183
+2026-10-05 10:37:36.204 INFO  req=5638f5 GET   /api/catalogue 200 630ms user=u1177
+2026-10-05 10:38:45.946 INFO  req=94eea0 GET   /api/demandes?statut=en_attente 200 2214ms user=u1167
+2026-10-05 10:38:49.927 WARN  db: pool sature (10/10 connexions, 3 requetes en attente)
+2026-10-05 10:39:14.850 ERROR req=58511f POST  /api/demandes 500 5001ms user=u1136 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 10:39:37.259 INFO  req=8b947a POST  /api/demandes 201 990ms user=u1147
+2026-10-05 10:39:38.812 INFO  req=4305aa GET   /api/demandes 200 504ms user=u1261
+2026-10-05 10:40:07.556 INFO  req=850b85 PATCH /api/demandes/84/statut 200 1740ms user=u1274
+2026-10-05 10:40:18.437 INFO  req=f64798 GET   /api/catalogue 200 1854ms user=u1186
+2026-10-05 10:40:30.000 WARN  healthcheck db=lent (2325ms) sso=ok
+2026-10-05 10:40:36.379 INFO  req=b290a7 GET   /api/demandes?statut=en_attente 200 2703ms user=u1111
+2026-10-05 10:41:41.077 INFO  req=24c1b3 GET   /api/catalogue 200 2992ms user=u1057
+2026-10-05 10:41:51.002 INFO  req=b50d1d GET   /api/demandes 200 740ms user=u1062
+2026-10-05 10:42:08.827 WARN  db: pool sature (10/10 connexions, 6 requetes en attente)
+2026-10-05 10:42:52.062 INFO  req=49345a GET   /api/catalogue 200 1140ms user=u1035
+2026-10-05 10:44:53.701 INFO  req=5e8008 GET   /api/catalogue 200 2492ms user=u1267
+2026-10-05 10:44:56.711 INFO  req=d5a51d GET   /api/demandes?statut=en_attente 200 560ms user=u1256
+2026-10-05 10:45:01.197 INFO  req=2d979f GET   /api/demandes 200 448ms user=u1250
+2026-10-05 10:45:05.307 INFO  req=4f390a GET   /api/demandes 200 1316ms user=u1113
+2026-10-05 10:46:03.957 INFO  req=a1e7da PATCH /api/demandes/312/statut 200 1425ms user=u1251
+2026-10-05 10:47:11.857 WARN  db: pool sature (10/10 connexions, 10 requetes en attente)
+2026-10-05 10:47:25.088 ERROR req=9a01c1 POST  /api/demandes 500 5005ms user=u1081 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 10:48:55.410 ERROR req=94f139 POST  /api/demandes 500 5002ms user=u1187 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 10:48:59.024 INFO  req=2a860e GET   /api/demandes/77 200 1335ms user=u1096
+2026-10-05 10:48:59.069 INFO  req=b37ed6 GET   /api/catalogue 200 1692ms user=u1111
+2026-10-05 10:49:11.355 ERROR req=abb705 GET   /api/demandes?statut=en_attente 500 5006ms user=u1124 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 10:49:33.360 INFO  req=f53f2a GET   /api/demandes/121 200 306ms user=u1213
+2026-10-05 10:49:40.940 INFO  req=8285f0 GET   /api/demandes?statut=en_attente 200 2604ms user=u1122
+2026-10-05 10:50:06.022 INFO  req=68a433 GET   /api/demandes 200 451ms user=u1119
+2026-10-05 10:50:30.000 WARN  healthcheck db=lent (2440ms) sso=ok
+2026-10-05 10:50:39.809 INFO  req=7d27e6 GET   /api/demandes 200 630ms user=u1048
+2026-10-05 10:50:57.045 ERROR req=c63b0c GET   /api/demandes/71 500 5002ms user=u1190 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 10:51:05.308 WARN  db: pool sature (10/10 connexions, 12 requetes en attente)
+2026-10-05 10:54:25.839 WARN  db: pool sature (10/10 connexions, 6 requetes en attente)
+2026-10-05 10:56:17.429 INFO  req=c24a5c PATCH /api/demandes/401/statut 200 567ms user=u1120
+2026-10-05 10:57:28.575 INFO  req=10d890 GET   /api/demandes/380 200 432ms user=u1035
+2026-10-05 10:57:42.066 INFO  req=a30b4d GET   /api/demandes/82 200 260ms user=u1074
+2026-10-05 10:57:54.953 INFO  req=7955c6 GET   /api/demandes 200 280ms user=u1164
+2026-10-05 10:58:59.743 INFO  req=8bc731 GET   /api/catalogue 200 938ms user=u1233
+2026-10-05 10:59:04.891 INFO  req=9d29d8 GET   /api/demandes 200 791ms user=u1095
+2026-10-05 10:59:16.596 INFO  req=e289ac GET   /api/demandes 200 2370ms user=u1270
+2026-10-05 10:59:39.140 WARN  db: pool sature (10/10 connexions, 10 requetes en attente)
+2026-10-05 10:59:59.539 INFO  req=274440 GET   /api/demandes 200 270ms user=u1048
+2026-10-05 11:00:30.000 WARN  healthcheck db=lent (1788ms) sso=ok
+2026-10-05 11:01:15.998 ERROR req=35accd POST  /api/demandes 500 5006ms user=u1258 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 11:01:26.811 INFO  req=ee1a7c GET   /api/catalogue 200 1677ms user=u1236
+2026-10-05 11:01:28.150 INFO  req=1a917a GET   /api/catalogue 200 1824ms user=u1013
+2026-10-05 11:01:38.046 ERROR req=ff9407 GET   /api/demandes 500 5007ms user=u1109 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 11:02:06.064 INFO  req=bd1eae GET   /api/demandes/94 200 78ms user=u1176
+2026-10-05 11:02:10.818 WARN  db: pool sature (10/10 connexions, 4 requetes en attente)
+2026-10-05 11:02:40.256 INFO  req=d57c14 POST  /api/demandes 201 1155ms user=u1163
+2026-10-05 11:02:57.600 INFO  req=53427d GET   /api/demandes/171 200 615ms user=u1252
+2026-10-05 11:03:16.574 INFO  req=a0858b GET   /api/catalogue 200 3995ms user=u1148
+2026-10-05 11:03:24.597 INFO  req=01a3e2 GET   /api/demandes?statut=en_attente 200 1632ms user=u1174
+2026-10-05 11:03:37.572 INFO  req=fe353a GET   /api/demandes 200 1952ms user=u1264
+2026-10-05 11:03:52.509 ERROR req=f6ad59 GET   /api/demandes/324 500 5008ms user=u1237 erreur="timeout 5000ms en attendant une connexion du pool"
+2026-10-05 11:03:54.146 INFO  req=8f7bb9 GET   /api/catalogue 200 1239ms user=u1144
+2026-10-05 11:04:42.240 INFO  req=da3606 GET   /api/demandes/205 200 704ms user=u1022
+2026-10-05 11:04:55.059 INFO  req=a1ccc4 GET   /api/catalogue 200 2590ms user=u1251
+2026-10-05 11:05:50.515 INFO  req=7e5f74 GET   /api/demandes/101 200 1104ms user=u1111
+2026-10-05 11:06:38.488 WARN  db: pool sature (10/10 connexions, 7 requetes en attente)
+2026-10-05 11:06:38.728 INFO  req=9b49fa GET   /api/demandes 200 910ms user=u1153
+2026-10-05 11:07:16.045 INFO  req=ccb443 GET   /api/catalogue 200 2223ms user=u1012
+2026-10-05 11:07:40.551 INFO  config rechargee par=a.vidal DB_POOL_MAX=50 (avant: 10)
+2026-10-05 11:08:36.659 INFO  req=84f49d GET   /api/catalogue 200 68ms user=u1082
+2026-10-05 11:10:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 11:10:37.892 INFO  req=85dd85 GET   /api/demandes?statut=en_attente 200 77ms user=u1131
+2026-10-05 11:12:26.318 INFO  req=c5e51a POST  /api/demandes 201 64ms user=u1187
+2026-10-05 11:12:43.637 INFO  req=c9f990 POST  /api/demandes 201 146ms user=u1030
+2026-10-05 11:13:29.894 INFO  req=fbde33 GET   /api/demandes 200 151ms user=u1136
+2026-10-05 11:13:37.728 INFO  req=fff35f GET   /api/demandes?statut=en_attente 200 71ms user=u1012
+2026-10-05 11:14:25.234 INFO  req=dcd36f GET   /api/demandes 200 64ms user=u1061
+2026-10-05 11:14:36.279 INFO  req=34deb8 POST  /api/demandes 201 200ms user=u1014
+2026-10-05 11:14:48.949 INFO  req=9b174f GET   /api/demandes 200 99ms user=u1014
+2026-10-05 11:16:27.792 INFO  req=6f5c69 GET   /api/demandes 200 96ms user=u1056
+2026-10-05 11:16:49.499 INFO  req=f230f8 GET   /api/demandes 200 37ms user=u1050
+2026-10-05 11:17:31.538 INFO  req=7b8ed4 GET   /api/demandes 200 118ms user=u1103
+2026-10-05 11:17:48.407 INFO  req=9759c7 GET   /api/demandes 200 115ms user=u1027
+2026-10-05 11:18:10.971 INFO  req=d0442b PATCH /api/demandes/273/statut 200 47ms user=u1213
+2026-10-05 11:19:26.808 INFO  req=d4f5e0 GET   /api/demandes/41 200 66ms user=u1063
+2026-10-05 11:20:09.568 INFO  req=d6def5 PATCH /api/demandes/257/statut 200 95ms user=u1129
+2026-10-05 11:20:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 11:23:07.540 INFO  req=4cf6c7 GET   /api/demandes 200 39ms user=u1094
+2026-10-05 11:23:13.992 INFO  req=153eb4 GET   /api/demandes 200 93ms user=u1164
+2026-10-05 11:23:50.467 INFO  req=633fa8 GET   /api/demandes 200 146ms user=u1055
+2026-10-05 11:25:23.909 INFO  req=89f1ab GET   /api/catalogue 200 40ms user=u1037
+2026-10-05 11:25:42.629 INFO  req=7d563e GET   /api/demandes/66 200 75ms user=u1218
+2026-10-05 11:25:58.665 INFO  req=2c81de GET   /api/demandes 200 36ms user=u1210
+2026-10-05 11:26:35.131 INFO  req=089dee GET   /api/demandes 200 128ms user=u1243
+2026-10-05 11:26:49.760 INFO  req=3612bc GET   /api/demandes?statut=en_attente 200 188ms user=u1240
+2026-10-05 11:26:56.251 INFO  req=3d6536 PATCH /api/demandes/250/statut 200 101ms user=u1162
+2026-10-05 11:27:08.022 INFO  req=cc31db GET   /api/demandes 200 130ms user=u1261
+2026-10-05 11:28:09.196 INFO  req=e5924e GET   /api/demandes 200 93ms user=u1048
+2026-10-05 11:28:16.678 INFO  req=0bf11d GET   /api/demandes/232 200 52ms user=u1223
+2026-10-05 11:28:32.311 INFO  req=e8c9a5 POST  /api/demandes 201 151ms user=u1046
+2026-10-05 11:29:04.694 INFO  req=26601f GET   /api/catalogue 200 211ms user=u1206
+2026-10-05 11:29:45.303 INFO  req=6ce755 GET   /api/demandes 200 136ms user=u1233
+2026-10-05 11:30:17.231 INFO  req=aef2f1 GET   /api/demandes/44 200 87ms user=u1277
+2026-10-05 11:30:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 11:30:42.400 INFO  req=da7048 GET   /api/demandes 200 113ms user=u1214
+2026-10-05 11:30:51.628 INFO  req=64ad4d GET   /api/demandes?statut=en_attente 200 106ms user=u1204
+2026-10-05 11:31:32.444 INFO  req=c85200 GET   /api/demandes 200 80ms user=u1027
+2026-10-05 11:31:34.729 INFO  req=80cd46 POST  /api/demandes 201 128ms user=u1174
+2026-10-05 11:31:43.697 INFO  req=a647e4 GET   /api/demandes/279 200 15ms user=u1081
+2026-10-05 11:31:44.207 ERROR req=820b99 PATCH /api/demandes/233/statut 500 22ms user=u1149 erreur="ValueError: statut inconnu 'annulee'"
+2026-10-05 11:32:33.521 INFO  req=afb91f GET   /api/catalogue 200 233ms user=u1141
+2026-10-05 11:32:56.507 INFO  req=940a7c GET   /api/demandes?statut=en_attente 200 154ms user=u1254
+2026-10-05 11:34:07.990 INFO  req=ecf8ac GET   /api/demandes/75 200 89ms user=u1051
+2026-10-05 11:34:30.450 INFO  req=269295 GET   /api/demandes/149 200 67ms user=u1181
+2026-10-05 11:34:30.559 INFO  req=4afe2b POST  /api/demandes 201 132ms user=u1111
+2026-10-05 11:34:43.550 INFO  req=4c1599 GET   /api/demandes/277 200 62ms user=u1192
+2026-10-05 11:35:30.641 INFO  req=5b192a GET   /api/catalogue 200 92ms user=u1128
+2026-10-05 11:35:31.932 INFO  req=875ef3 GET   /api/demandes 200 73ms user=u1014
+2026-10-05 11:35:32.058 INFO  req=a94aa6 POST  /api/demandes 201 205ms user=u1015
+2026-10-05 11:35:39.720 INFO  req=6fd1cd GET   /api/demandes?statut=en_attente 200 116ms user=u1165
+2026-10-05 11:36:35.718 INFO  req=b7e104 GET   /api/demandes 200 97ms user=u1227
+2026-10-05 11:36:43.228 INFO  req=dcc202 GET   /api/demandes/164 200 55ms user=u1077
+2026-10-05 11:36:49.186 INFO  req=b5d89e GET   /api/catalogue 200 161ms user=u1088
+2026-10-05 11:37:17.356 INFO  req=f54e0d GET   /api/demandes 200 82ms user=u1164
+2026-10-05 11:37:30.234 INFO  req=0c80fc GET   /api/demandes/343 200 20ms user=u1025
+2026-10-05 11:37:33.045 INFO  req=c5eb05 GET   /api/demandes/390 200 88ms user=u1252
+2026-10-05 11:37:34.104 INFO  req=4e2c2a GET   /api/demandes/357 200 82ms user=u1091
+2026-10-05 11:38:09.330 INFO  req=0a82cb GET   /api/demandes 200 81ms user=u1148
+2026-10-05 11:38:22.368 INFO  req=859a41 GET   /api/demandes 200 101ms user=u1150
+2026-10-05 11:38:22.372 INFO  req=589bc6 GET   /api/demandes 200 93ms user=u1089
+2026-10-05 11:38:25.866 INFO  req=9fafa4 GET   /api/demandes 200 73ms user=u1263
+2026-10-05 11:38:49.901 INFO  req=c7ae9c POST  /api/demandes 201 163ms user=u1228
+2026-10-05 11:39:03.271 INFO  req=97a65b GET   /api/demandes/271 200 40ms user=u1273
+2026-10-05 11:39:14.032 INFO  req=61ec7b POST  /api/demandes 201 193ms user=u1021
+2026-10-05 11:39:27.944 INFO  req=be1cee PATCH /api/demandes/351/statut 200 108ms user=u1237
+2026-10-05 11:40:08.465 INFO  req=63ac4e GET   /api/demandes 200 83ms user=u1257
+2026-10-05 11:40:10.252 INFO  req=9ea27b GET   /api/demandes/172 200 66ms user=u1279
+2026-10-05 11:40:11.296 WARN  req=c76e82 GET   /api/demandes/39 404 8ms user=u1273
+2026-10-05 11:40:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 11:40:48.768 INFO  req=58aeb3 GET   /api/demandes 200 39ms user=u1223
+2026-10-05 11:40:50.762 INFO  req=e4d913 GET   /api/catalogue 200 95ms user=u1256
+2026-10-05 11:41:22.831 INFO  req=70a5df GET   /api/demandes?statut=en_attente 200 33ms user=u1010
+2026-10-05 11:42:01.946 INFO  req=9f4a12 GET   /api/demandes 200 87ms user=u1038
+2026-10-05 11:42:14.980 INFO  req=5e3365 GET   /api/catalogue 200 65ms user=u1268
+2026-10-05 11:42:24.833 INFO  req=b00993 PATCH /api/demandes/115/statut 200 27ms user=u1085
+2026-10-05 11:42:25.817 WARN  req=f27ba7 POST  /api/demandes 422 13ms user=u1104
+2026-10-05 11:42:56.329 INFO  req=3af810 PATCH /api/demandes/380/statut 200 60ms user=u1095
+2026-10-05 11:43:24.957 INFO  req=812c71 POST  /api/demandes 201 133ms user=u1156
+2026-10-05 11:43:39.663 INFO  req=7ad810 GET   /api/demandes 200 34ms user=u1254
+2026-10-05 11:44:06.276 INFO  req=80e1b4 GET   /api/catalogue 200 56ms user=u1043
+2026-10-05 11:44:12.242 INFO  req=c427f0 GET   /api/demandes?statut=en_attente 200 190ms user=u1062
+2026-10-05 11:45:34.327 INFO  req=3e79ab GET   /api/demandes/31 200 74ms user=u1211
+2026-10-05 11:45:57.049 INFO  req=a8f8d3 GET   /api/demandes 200 120ms user=u1185
+2026-10-05 11:46:11.965 INFO  req=ffd8c8 GET   /api/demandes/312 200 38ms user=u1093
+2026-10-05 11:46:44.659 INFO  req=15f369 GET   /api/demandes/123 200 36ms user=u1230
+2026-10-05 11:46:47.885 INFO  req=c45f00 GET   /api/catalogue 200 88ms user=u1067
+2026-10-05 11:47:06.864 INFO  req=1a6e3b GET   /api/demandes/193 200 58ms user=u1084
+2026-10-05 11:47:19.068 INFO  req=0e8988 GET   /api/demandes 200 34ms user=u1084
+2026-10-05 11:47:27.662 INFO  req=470773 GET   /api/demandes?statut=en_attente 200 41ms user=u1045
+2026-10-05 11:48:23.616 INFO  req=39a13c GET   /api/catalogue 200 191ms user=u1020
+2026-10-05 11:48:31.184 INFO  req=66aecf GET   /api/demandes 200 136ms user=u1058
+2026-10-05 11:48:33.534 INFO  req=d1cd41 GET   /api/demandes 200 121ms user=u1087
+2026-10-05 11:48:38.581 WARN  req=145ae5 POST  /api/demandes 422 17ms user=u1050
+2026-10-05 11:50:30.000 INFO  healthcheck db=ok sso=ok
+2026-10-05 11:50:50.028 INFO  req=d87bd6 GET   /api/demandes 200 27ms user=u1172
+2026-10-05 11:51:55.601 INFO  req=439fad PATCH /api/demandes/149/statut 200 56ms user=u1278
+2026-10-05 11:52:00.819 INFO  req=14ebec POST  /api/demandes 201 62ms user=u1191
+2026-10-05 11:52:10.304 INFO  req=c967e6 GET   /api/demandes 200 72ms user=u1051
+2026-10-05 11:52:37.480 INFO  req=08a5de GET   /api/demandes/export.csv 200 9870ms user=u1201
+2026-10-05 11:53:10.349 INFO  req=d48a26 POST  /api/demandes 201 177ms user=u1058
+2026-10-05 11:54:10.370 INFO  req=8a0717 GET   /api/demandes/347 200 41ms user=u1143
+2026-10-05 11:55:47.147 INFO  req=43639b GET   /api/demandes 200 48ms user=u1255
+2026-10-05 11:56:32.671 INFO  req=a549af GET   /api/demandes 200 78ms user=u1144
+2026-10-05 11:58:05.398 INFO  req=866e03 GET   /api/demandes 200 32ms user=u1230
+2026-10-05 11:58:11.518 INFO  req=65bb01 POST  /api/demandes 201 173ms user=u1098
+2026-10-05 11:58:25.622 INFO  req=008538 GET   /api/demandes?statut=en_attente 200 59ms user=u1001
+2026-10-05 11:59:00.642 INFO  req=0dd777 GET   /api/demandes?statut=en_attente 200 150ms user=u1141
+2026-10-05 11:59:02.733 INFO  req=ed04eb GET   /api/catalogue 200 85ms user=u1247

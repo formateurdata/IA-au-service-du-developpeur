@@ -1,0 +1,26 @@
+[project]
+name = "formation-deia"
+version = "1.0.0"
+description = "Formation DEIA, L'IA au service des developpeurs : environnement Python des demos"
+requires-python = ">=3.11"
+dependencies = [
+    # Jour 1, demo 1 : tokenisation
+    "tiktoken>=0.7",
+    # Jour 2, demos 1 et 4 : appels directs a l'API, comme au Lab 2
+    "openai>=3.0",
+    # Jour 2, demos 2 et 3 : LangChain et recherche, memes versions qu'au Lab 3
+    "langchain-core>=1.0",
+    "langchain-openai>=1.0",
+    "langchain-chroma>=1.0",
+    "langchain-text-splitters>=1.0",
+    "rank-bm25>=0.2.2",
+    "snowballstemmer>=2.2",
+]
+
+[tool.uv]
+# Un environnement, pas un paquet a installer.
+package = false
+
+[tool.pyrefly]
+# Les demos importent commun.py, place dans demos/.
+search-path = [".", "demos"]

@@ -1,0 +1,637 @@
+JOURNAL DES COMITÉS DE PILOTAGE - ANNÉE 2026
+Projet : portail interne des demandes de matériel
+Direction des systèmes d'information - document de travail, diffusion interne
+
+Ce journal rassemble, dans l'ordre chronologique, les comptes rendus des comités
+de pilotage du projet. Chaque compte rendu est validé au début du comité suivant.
+Les montants sont exprimés hors taxes.
+
+========================================================================
+COMITÉ DE PILOTAGE N° 1 - mardi 13 janvier 2026, 14 h, salle Rhône (Lyon)
+========================================================================
+
+Présents : Claire Vasseur (directrice des systèmes d'information, présidente), Martin Leroy (chef de projet), Martine Leroux (responsable des achats), Samir Haddou (architecte), Hélène Brunet (responsable de la sécurité des systèmes d'information), Olivier Marchand (contrôle de gestion), Inès Faure (représentante des utilisateurs), Vincent Royer (chef de projet chez le prestataire)
+Excusé : Bruno Carlier (logistique)
+Rédaction : Martin Leroy
+
+1. Ouverture et objectifs du projet
+
+Claire Vasseur ouvre le premier comité de pilotage et rappelle l'objectif du projet : remplacer le circuit actuel des demandes de matériel, fondé sur des courriels et un tableur partagé, par un portail interne unique. Le portail couvrira les trois sites de l'entreprise, Lyon, Villeurbanne et Grenoble, soit environ 1 900 salariés.
+
+Martin Leroy présente le périmètre de la première version : dépôt et suivi des demandes, validation par le manager, traitement par les achats, notification de livraison. Les statistiques détaillées, l'application mobile et le lien avec la comptabilité sont renvoyés à une phase ultérieure. Vincent Royer confirme que l'équipe du prestataire comptera quatre personnes à partir de février.
+
+2. Budget
+
+Olivier Marchand présente le chiffrage établi avec le prestataire : développement, hébergement de la première année, licences du connecteur d'authentification et accompagnement au changement. Après discussion, le comité vote un budget initial de 180 000 € pour l'ensemble du projet, licences comprises. Olivier Marchand présentera un point de consommation aux comités suivants.
+
+3. Planning
+
+Martin Leroy présente un planning en quatre étapes : cadrage jusqu'à fin février, développement de mars à mai, recette en mai et juin, puis déploiement. La mise en production générale est fixée au 15 juin 2026.
+
+Samir Haddou estime le calendrier tendu mais tenable, sous réserve que l'intégration avec l'annuaire de l'entreprise ne réserve pas de surprise.
+
+4. Catalogue du matériel
+
+Martine Leroux présente l'état du catalogue actuel : 486 références, dont une partie n'est plus commandée depuis plusieurs années. Elle propose de le réduire avant la reprise des données dans le portail, en ne gardant que les articles commandés au moins une fois au cours des deux dernières années.
+
+Inès Faure souhaite que les intitulés soient revus en même temps : les utilisateurs ne savent pas toujours distinguer un adaptateur d'une station d'accueil. Le comité valide le principe d'une revue des intitulés par les utilisateurs référents.
+
+5. Communication
+
+Le service communication propose une campagne en trois temps : une annonce un mois avant l'ouverture, un rappel la semaine précédente, puis un article de retour d'expérience un mois après. Claire Vasseur demande que le nom du portail soit choisi par les salariés ; un vote sera organisé sur l'intranet.
+
+6. Fonctionnement du comité
+
+Le comité se réunira une fois par mois, le mardi à 14 h, hors mois d'août. Les comptes rendus seront rédigés par le chef de projet et diffusés sous cinq jours ouvrés ; ils seront validés en ouverture du comité suivant.
+
+Un comité restreint, composé de la présidente, du chef de projet et du prestataire, pourra se réunir entre deux comités si un arbitrage rapide est nécessaire. Ses décisions seront présentées au comité suivant.
+
+Actions
+
+- Martin Leroy : planning détaillé du projet, pour le 27 janvier
+- Samir Haddou : dossier d'architecture, pour le 10 février
+- Martine Leroux : inventaire des contrats en cours avec les fournisseurs de matériel, pour le 10 février
+- Inès Faure : constitution d'un groupe de douze utilisateurs référents, pour le 10 février
+
+Prochain comité : mardi 10 février 2026.
+
+========================================================================
+COMITÉ DE PILOTAGE N° 2 - mardi 10 février 2026, 14 h, salle Rhône (Lyon)
+========================================================================
+
+Présents : Claire Vasseur, Martin Leroy, Martine Leroux, Samir Haddou, Hélène Brunet, Olivier Marchand, Inès Faure, Vincent Royer, Bruno Carlier
+Rédaction : Martin Leroy
+
+1. Validation du compte rendu
+
+Le compte rendu du comité précédent est validé sans modification.
+
+2. Architecture
+
+Samir Haddou présente le dossier d'architecture. Le portail sera une application web hébergée dans le centre de données de Lyon, avec une base de données relationnelle et une interface de programmation qui servira aussi aux futurs outils internes.
+
+L'authentification passera par le connecteur d'authentification déjà utilisé pour la messagerie, afin que les salariés n'aient pas de nouveau mot de passe à retenir. Hélène Brunet demande que les journaux d'accès soient conservés douze mois ; le point est accepté.
+
+3. Règles de validation des demandes
+
+Inès Faure rapporte la principale attente des utilisateurs référents : ne plus attendre plusieurs jours la signature du manager pour une souris ou un câble. Olivier Marchand indique que 62 % des demandes de l'an dernier portaient sur un montant inférieur à 300 €, pour 9 % de la dépense totale.
+
+Le comité décide que les demandes d'un montant inférieur à 300 € seront validées automatiquement, sans passer par le manager. Au-delà de ce montant, le circuit actuel est conservé : validation par le manager, puis traitement par les achats.
+
+Martine Leroux demande que les achats gardent la possibilité de refuser une demande validée automatiquement si l'article n'est plus au catalogue ; le comité l'accepte.
+
+4. Recette
+
+Le comité convient qu'un cahier de recette décrira les scénarios à tester avant la mise en production. Sa rédaction est confiée à Martin Leroy, pour le 31 mars, avec l'aide des utilisateurs référents.
+
+5. Formation des utilisateurs
+
+Inès Faure présente les premières orientations du plan de formation. Les salariés recevront un guide d'une page et une vidéo de trois minutes ; des sessions de quarante-cinq minutes seront proposées aux managers et aux équipes des achats, qui utiliseront le portail tous les jours.
+
+Chaque site disposera d'au moins deux référents capables de répondre aux questions courantes. Les référents seront choisis parmi les membres du groupe d'utilisateurs constitué en janvier.
+
+6. Indicateurs de l'ancien circuit
+
+Olivier Marchand présente les indicateurs de l'ancien circuit sur l'année écoulée : 5 840 demandes, un délai moyen de 9,5 jours entre la demande et la livraison, et 23 % de demandes incomplètes qui ont nécessité un échange de courriels supplémentaire.
+
+Le comité retient ces trois indicateurs pour mesurer l'apport du portail. Ils seront suivis chaque trimestre à partir de la mise en production.
+
+7. Matériel de prêt
+
+Bruno Carlier rappelle que la logistique gère 25 ordinateurs portables de prêt, réservés aujourd'hui par courriel auprès de son équipe. Les réservations se concentrent sur les périodes de déplacement et sur les arrivées de nouveaux salariés dont le poste n'est pas encore livré.
+
+Le comité convient de ne pas intégrer le prêt de matériel dans la première version du portail. La question sera revue lors de la préparation d'une phase ultérieure.
+
+Actions
+
+- Martin Leroy : cahier de recette, pour le 31 mars
+- Samir Haddou : maquette de l'écran de dépôt d'une demande, pour le 10 mars
+- Hélène Brunet : exigences de sécurité à transmettre au prestataire, pour le 24 février
+- Martine Leroux : liste des articles à retirer du catalogue, pour le 10 mars
+
+Prochain comité : mardi 10 mars 2026.
+
+========================================================================
+COMITÉ DE PILOTAGE N° 3 - mardi 10 mars 2026, 14 h, salle Rhône (Lyon)
+========================================================================
+
+Présents : Claire Vasseur, Martin Leroy, Martine Leroux, Samir Haddou, Hélène Brunet, Olivier Marchand, Inès Faure, Vincent Royer
+Excusé : Bruno Carlier
+Rédaction : Martin Leroy
+
+1. Validation du compte rendu
+
+Le compte rendu du comité précédent est validé sans modification.
+
+2. Point budgétaire
+
+Olivier Marchand présente le premier point de consommation : 41 600 € engagés à fin février. Il signale surtout un dépassement prévisionnel d'environ 35 000 €, dû au coût du connecteur d'authentification, plus élevé que prévu, et à deux semaines de développement supplémentaires pour l'écran des achats. Il propose de porter le budget à 215 000 €.
+
+Claire Vasseur rappelle qu'un dépassement de cette ampleur ne peut pas être validé par le comité seul. La proposition n'est pas validée en séance : l'arbitrage revient à la direction générale, qui sera invitée au prochain comité. Olivier Marchand préparera une note d'arbitrage.
+
+3. Proposition d'un assistant fondé sur l'intelligence artificielle
+
+Samir Haddou propose d'ajouter au portail un assistant fondé sur l'intelligence artificielle : le salarié décrirait son besoin en quelques mots, et l'assistant pré-remplirait la demande avec l'article du catalogue le plus proche. Il estime le coût à une dizaine de jours de développement.
+
+Hélène Brunet s'inquiète de l'envoi des motifs de demande, qui contiennent parfois des informations médicales, à un service externe. Olivier Marchand rappelle que le budget est déjà sous tension. La proposition n'est pas retenue. Elle pourra être réétudiée une fois le portail en production.
+
+4. Avancement des développements
+
+Vincent Royer présente l'avancement des développements, lot par lot :
+
+- Lot 1, dépôt et suivi des demandes : 30 %
+- Lot 2, circuit de validation : 15 %
+- Lot 3, écran des achats : 5 %
+- Lot 4, notifications : 0 %
+- Lot 5, statistiques : 0 %
+
+Le démarrage du lot des achats attend la maquette validée par Martine Leroux.
+
+5. Reprise des données
+
+Samir Haddou présente le plan de reprise du tableur partagé : 3 214 lignes depuis 2023, dont environ 400 doublons et 260 demandes sans statut final. Seules les demandes des douze derniers mois seront reprises dans le portail ; les autres seront archivées en lecture seule.
+
+Martine Leroux demande que les numéros de commande soient conservés lors de la reprise, pour faciliter les rapprochements avec les factures des fournisseurs. Samir Haddou confirme que le champ sera repris tel quel.
+
+6. Ergonomie des écrans
+
+Les maquettes ont été testées avec neuf utilisateurs référents. Le dépôt d'une demande prend en moyenne 2 minutes 40, contre plus de 10 minutes avec le tableur. Deux difficultés reviennent : le choix de la catégorie, et la saisie du centre de coût, que la plupart des salariés ne connaissent pas.
+
+Le comité décide que le centre de coût sera déduit du service du demandeur. Les catégories seront accompagnées d'exemples d'articles.
+
+7. Retours des utilisateurs référents
+
+Le groupe des douze utilisateurs référents s'est réuni deux fois. Ses membres demandent que le formulaire propose en premier les articles les plus demandés dans leur service, et qu'une demande refusée puisse être corrigée et redéposée sans tout ressaisir. Les deux demandes sont ajoutées au périmètre de la première version.
+
+8. Accessibilité
+
+Samir Haddou indique que le portail devra respecter le référentiel d'accessibilité en vigueur dans l'entreprise. Un audit sera mené avant la mise en production ; les écrans de dépôt et de suivi des demandes seront testés avec un lecteur d'écran et une navigation au clavier seul.
+
+9. Environnements techniques
+
+Vincent Royer présente les environnements mis à disposition : un environnement de développement chez le prestataire, un environnement de recette dans le centre de données de Lyon et l'environnement de production. Les sauvegardes de la base de production seront quotidiennes et conservées trente jours.
+
+Actions
+
+- Olivier Marchand : note d'arbitrage budgétaire pour la direction générale, pour le 7 avril
+- Vincent Royer : planning révisé tenant compte du connecteur d'authentification, pour le 7 avril
+- Inès Faure : programme des sessions de formation, pour le 14 avril
+
+Prochain comité : mardi 14 avril 2026.
+
+========================================================================
+COMITÉ DE PILOTAGE N° 4 - mardi 14 avril 2026, 14 h, salle Rhône (Lyon)
+========================================================================
+
+Présents : Paul Renaud (directeur général adjoint), Claire Vasseur, Martin Leroy, Martine Leroux, Samir Haddou, Hélène Brunet, Olivier Marchand, Inès Faure, Vincent Royer
+Excusé : Bruno Carlier
+Rédaction : Martin Leroy
+
+1. Validation du compte rendu
+
+Le compte rendu du comité précédent est validé sans modification.
+
+2. Arbitrage budgétaire
+
+Olivier Marchand présente sa note : le dépassement est confirmé, et la demande reste de 215 000 €. Paul Renaud interroge l'équipe sur les postes de dépense qui pourraient être réduits. Vincent Royer indique que le module de statistiques peut être simplifié sans toucher au cœur du portail.
+
+Après échange, Paul Renaud valide un budget révisé de 205 000 €, au lieu des 215 000 € demandés. Les 10 000 € d'écart seront absorbés en réduisant le périmètre des statistiques de la première version.
+
+3. Planning
+
+Vincent Royer présente le planning révisé. L'intégration du connecteur d'authentification a pris trois semaines de retard : la version installée dans l'entreprise ne gère pas le renouvellement automatique des jetons de connexion, et une mise à jour est nécessaire.
+
+Le comité reporte la mise en production générale au 14 septembre 2026. Paul Renaud demande que tout nouveau report lui soit signalé avant le comité.
+
+4. Avancement des développements
+
+Vincent Royer présente l'avancement des développements, lot par lot :
+
+- Lot 1, dépôt et suivi des demandes : 55 %
+- Lot 2, circuit de validation : 40 %
+- Lot 3, écran des achats : 20 %
+- Lot 4, notifications : 10 %
+- Lot 5, statistiques : 0 %
+
+Le lot des statistiques sera replanifié pour tenir compte du périmètre réduit.
+
+5. Notifications
+
+Le portail enverra un courriel à chaque changement de statut : dépôt, validation, refus, commande et livraison. Inès Faure craint une surcharge de messages pour les managers, qui valident parfois plusieurs dizaines de demandes par semaine.
+
+Il est convenu que les managers recevront un récapitulatif quotidien à 9 h, plutôt qu'un message par demande. Les salariés garderont un message à chaque étape.
+
+6. Lien avec la comptabilité
+
+Olivier Marchand demande un export mensuel des demandes livrées, avec le centre de coût et le montant, pour faciliter les clôtures. L'export sera disponible dans la première version ; l'intégration automatique avec le logiciel comptable reste prévue pour une phase ultérieure.
+
+7. Catalogue du matériel
+
+Martine Leroux indique que le nettoyage du catalogue est terminé : il passe de 486 à 212 références, réparties en neuf catégories. Les prix seront mis à jour chaque trimestre à partir des tarifs des fournisseurs.
+
+Inès Faure demande que chaque article soit accompagné d'une photo. Martine Leroux pense pouvoir l'obtenir pour les trois quarts des articles ; les autres garderont une illustration générique de leur catégorie.
+
+8. Communication
+
+Le vote sur le nom du portail a réuni 640 participants. Le nom « Mon Matériel » arrive en tête avec 38 % des voix ; il est retenu. Le service communication prépare une affiche par site et un court article pour la lettre interne de l'été.
+
+Actions
+
+- Vincent Royer : mise à jour du connecteur d'authentification en recette, pour le 12 mai
+- Samir Haddou : plan de bascule depuis le tableur partagé, pour le 16 juin
+- Inès Faure : calendrier des sessions de formation adapté au nouveau planning, pour le 12 mai
+
+Prochain comité : mardi 12 mai 2026.
+
+========================================================================
+COMITÉ DE PILOTAGE N° 5 - mardi 12 mai 2026, 14 h, salle Rhône (Lyon)
+========================================================================
+
+Présents : Claire Vasseur, Martin Leroy, Martine Leroux, Samir Haddou, Hélène Brunet, Olivier Marchand, Inès Faure, Vincent Royer, Bruno Carlier
+Rédaction : Martin Leroy
+
+1. Validation du compte rendu
+
+Le compte rendu du comité précédent est validé sans modification.
+
+2. Cahier de recette
+
+Martin Leroy indique qu'il n'a pas pu avancer sur le cahier de recette, faute de temps : la préparation de la bascule et le suivi du prestataire l'occupent entièrement. Inès Faure, qui anime déjà les utilisateurs référents, propose de le reprendre.
+
+Le cahier de recette est désormais sous la responsabilité d'Inès Faure, avec une échéance repoussée au 19 juin.
+
+3. Achats et délais de livraison
+
+Bruno Carlier présente les délais de livraison constatés au premier trimestre : onze jours ouvrés en moyenne pour les écrans, avec des écarts importants d'un mois à l'autre.
+
+Martine Leroux confirme le constat et précise : « Le fournisseur d'écrans actuel ne tiendra pas les délais de livraison annoncés ; je propose de lancer une consultation avant l'été. » Le comité approuve le lancement de la consultation.
+
+4. Sécurité des postes de travail
+
+Hélène Brunet fait le point sur la sécurité des postes de travail. Le chiffrement des disques est désormais actif sur 97 % du parc, le reste concernant des postes en attente de remplacement. Le verrouillage automatique des sessions a été harmonisé à cinq minutes sur les trois sites. Elle rappelle que la campagne de sensibilisation à l'hameçonnage reprendra en septembre et que les résultats de la précédente campagne seront présentés au comité de direction. Elle signale aussi que les 140 postes du site de Villeurbanne resteront sous Windows 10 jusqu'à leur remplacement, prévu au printemps 2027, et que le connecteur d'authentification retenu pour le portail ne prend pas en charge cette version. Enfin, elle demande que les comptes des prestataires soient revus chaque trimestre, ce que Vincent Royer accepte pour son équipe.
+
+5. Avancement des développements
+
+Vincent Royer présente l'avancement des développements, lot par lot :
+
+- Lot 1, dépôt et suivi des demandes : 80 %
+- Lot 2, circuit de validation : 65 %
+- Lot 3, écran des achats : 45 %
+- Lot 4, notifications : 40 %
+- Lot 5, statistiques : 10 %
+
+La vélocité de l'équipe s'est stabilisée à une vingtaine de points par sprint.
+
+6. Délégation de validation
+
+Pour éviter qu'une demande reste bloquée pendant les congés d'un manager, le portail permettra de désigner un suppléant pour une période donnée. À défaut de suppléant, la demande remontera au responsable du service après cinq jours ouvrés sans réponse.
+
+7. Retours des utilisateurs référents
+
+Les utilisateurs référents ont testé la version de démonstration. Ils apprécient le suivi en temps réel, mais trouvent le vocabulaire trop technique : le statut « en attente d'engagement » sera remplacé par « en cours de commande ». Ils souhaitent aussi pouvoir joindre une photo du matériel défectueux à leur demande.
+
+8. Support et assistance
+
+L'équipe support présente l'organisation prévue après l'ouverture. Les questions courantes seront traitées par le support de niveau 1, joignable de 8 h à 18 h ; les anomalies seront transmises au prestataire, qui s'engage à prendre en compte une anomalie bloquante en quatre heures ouvrées.
+
+Une adresse de contact unique sera indiquée en bas de chaque page du portail. Le comité demande qu'un premier bilan du support soit présenté un mois après l'ouverture.
+
+9. Protection des données personnelles
+
+Le délégué à la protection des données a été consulté. Le portail sera inscrit au registre des traitements. Les demandes seront conservées trois ans après leur livraison, puis supprimées.
+
+Les motifs saisis en texte libre feront l'objet d'un rappel à l'écran, pour éviter que des informations sensibles y soient inscrites.
+
+Actions
+
+- Inès Faure : cahier de recette, pour le 19 juin
+- Martine Leroux : dossier de consultation pour les écrans et les claviers, pour le 16 juin
+- Hélène Brunet : revue trimestrielle des comptes des prestataires, pour le 30 juin
+
+Prochain comité : mardi 16 juin 2026.
+
+========================================================================
+COMITÉ DE PILOTAGE N° 6 - mardi 16 juin 2026, 14 h, salle Rhône (Lyon)
+========================================================================
+
+Présents : Claire Vasseur, Martin Leroy, Leïla Mansour, Martine Leroux, Samir Haddou, Hélène Brunet, Olivier Marchand, Inès Faure, Vincent Royer
+Excusé : Bruno Carlier
+Rédaction : Martin Leroy
+
+1. Validation du compte rendu
+
+Le compte rendu du comité précédent est validé sans modification.
+
+2. Organisation du projet
+
+Martin Leroy annonce qu'il quitte le projet à la fin du mois de juin pour rejoindre la direction financière. Claire Vasseur le remercie pour le lancement du projet.
+
+Leïla Mansour, cheffe de projet à la DSI, reprendra la direction du projet à compter du 1er juillet ; elle assiste à ce comité pour assurer la transition.
+
+3. Règles de validation : retour sur la décision de février
+
+Hélène Brunet et Olivier Marchand présentent les résultats des tests menés avec les utilisateurs référents. Plusieurs scénarios montrent qu'une demande de 560 € peut être découpée en deux demandes de 280 € pour éviter la validation du manager. Olivier Marchand rappelle que ce type de fractionnement avait déjà été constaté dans l'ancien circuit.
+
+Le comité abaisse le seuil de validation automatique de 300 € à 150 €. Les demandes de 150 € ou plus passent désormais par le manager. Samir Haddou ajoutera un contrôle qui signale au manager plusieurs demandes du même salarié déposées le même jour.
+
+4. Point budgétaire
+
+Olivier Marchand présente la consommation à fin mai : 118 900 € engagés. Il précise que le budget de 205 000 € comprend 12 000 € de licences annuelles, qui seront à renouveler chaque année hors budget projet.
+
+5. Avancement des développements
+
+Vincent Royer présente l'avancement des développements, lot par lot :
+
+- Lot 1, dépôt et suivi des demandes : 95 %
+- Lot 2, circuit de validation : 85 %
+- Lot 3, écran des achats : 70 %
+- Lot 4, notifications : 75 %
+- Lot 5, statistiques : 30 %
+
+Le lot des achats reste le plus exposé : l'écran a été revu deux fois.
+
+6. Reprise des données
+
+Un essai de reprise a été réalisé sur l'environnement de recette : 1 980 demandes ont été reprises, 37 ont été rejetées parce que leur service n'existe plus. Les services renommés depuis 2024 seront rattachés à leur nouvel intitulé avant la reprise définitive, qui aura lieu la veille de l'ouverture.
+
+7. Formation des utilisateurs
+
+Inès Faure fait le point sur la préparation de la formation. Le guide utilisateur est rédigé et en cours de relecture par le service communication. Dix-huit sessions sont prévues pour les managers : huit à Lyon, six à Villeurbanne et quatre à Grenoble.
+
+Les référents seront formés en premier, deux semaines avant l'ouverture du portail sur leur site. Le calendrier précis sera arrêté une fois la date de mise en production confirmée.
+
+8. Indicateurs de l'ancien circuit
+
+Olivier Marchand actualise les indicateurs de l'ancien circuit sur les cinq premiers mois de l'année : le délai moyen atteint 10,2 jours, en hausse, en raison des difficultés de livraison des écrans. La part des demandes incomplètes reste stable, autour de 22 %.
+
+Actions
+
+- Samir Haddou : contrôle des demandes multiples d'un même salarié, pour le 7 juillet
+- Martin Leroy : passation des dossiers à Leïla Mansour, pour le 30 juin
+- Vincent Royer : préparation du test d'intrusion, pour le 30 juin
+
+Prochain comité : mardi 7 juillet 2026.
+
+========================================================================
+COMITÉ DE PILOTAGE N° 7 - mardi 7 juillet 2026, 14 h, salle Rhône (Lyon)
+========================================================================
+
+Présents : Claire Vasseur, Leïla Mansour (cheffe de projet), Martine Leroux, Samir Haddou, Hélène Brunet, Olivier Marchand, Inès Faure, Vincent Royer, Bruno Carlier
+Rédaction : Leïla Mansour
+
+1. Validation du compte rendu
+
+Le compte rendu du comité précédent est validé sans modification.
+
+2. Cahier de recette
+
+Leïla Mansour indique que le cahier de recette a été livré par Inès Faure le 26 juin, avec une semaine de retard sur l'échéance. Il compte 64 scénarios. Le comité le valide.
+
+3. Résultats du test d'intrusion
+
+Hélène Brunet présente les résultats du test d'intrusion mené fin juin par un cabinet externe. Trois vulnérabilités ont été relevées : une vulnérabilité critique, qui permet à un utilisateur connecté de télécharger l'export des demandes de tout un service sans en avoir le droit, et deux vulnérabilités de niveau moyen, l'une sur des en-têtes de sécurité manquants, l'autre sur une durée de session trop longue, fixée à douze heures.
+
+Hélène Brunet indique qu'elle ne donnera pas son accord à la mise en production tant que la vulnérabilité critique ne sera pas corrigée et vérifiée par un contre-test.
+
+4. Planning
+
+La correction de la vulnérabilité critique et l'organisation du contre-test ne sont pas compatibles avec la date du 14 septembre. Le comité reporte la mise en production générale au 5 octobre 2026. Claire Vasseur informera Paul Renaud de ce report avant la fin de la semaine.
+
+5. Avancement des développements
+
+Vincent Royer présente l'avancement des développements, lot par lot :
+
+- Lot 1, dépôt et suivi des demandes : 100 %
+- Lot 2, circuit de validation : 100 %
+- Lot 3, écran des achats : 90 %
+- Lot 4, notifications : 100 %
+- Lot 5, statistiques : 60 %
+
+Les lots terminés sont en recette ; le reste suivra en septembre.
+
+6. Matériel remplacé
+
+Bruno Carlier présente la filière de reprise du matériel remplacé : 312 postes et 190 écrans ont été recyclés l'an dernier par un prestataire agréé. Le portail devra permettre de signaler le matériel rendu lors d'une livraison, pour mettre à jour l'inventaire sans saisie supplémentaire.
+
+7. Communication
+
+Le service communication adapte la campagne au nouveau calendrier. L'annonce générale est décalée ; seule une brève paraîtra dans la lettre interne de juillet pour présenter le projet et le nom retenu. Les affiches déjà imprimées, qui mentionnaient le mois de septembre, ne seront pas diffusées.
+
+8. Environnements techniques
+
+Samir Haddou indique que l'environnement de production est installé. Un exercice de restauration a été mené le 30 juin : la base a été restaurée en 25 minutes, pour un objectif fixé à une heure. Les montées de version se feront le mardi soir, hors période de clôture comptable.
+
+9. Points divers
+
+Bruno Carlier rappelle que le quai de livraison de Lyon sera fermé du 3 au 21 août ; aucune livraison de matériel ne pourra être reçue pendant cette période. Il n'y aura pas de comité en août.
+
+Actions
+
+- Vincent Royer : correction de la vulnérabilité critique, pour le 31 juillet
+- Hélène Brunet : organisation du contre-test, pour le 4 septembre
+- Leïla Mansour : plan de déploiement par site, pour le 15 septembre
+
+Prochain comité : mardi 15 septembre 2026.
+
+========================================================================
+COMITÉ DE PILOTAGE N° 8 - mardi 15 septembre 2026, 14 h, salle Rhône (Lyon)
+========================================================================
+
+Présents : Claire Vasseur, Leïla Mansour, Martine Leroux, Samir Haddou, Hélène Brunet, Olivier Marchand, Inès Faure, Vincent Royer, Bruno Carlier
+Rédaction : Leïla Mansour
+
+1. Validation du compte rendu
+
+Le compte rendu du comité précédent est validé sans modification.
+
+2. Sécurité
+
+Hélène Brunet confirme que la vulnérabilité critique est corrigée : le contre-test du 3 septembre l'a vérifié. La vulnérabilité moyenne sur les en-têtes de sécurité est également corrigée.
+
+La troisième, sur la durée de session, reste ouverte : la réduire demande une modification du connecteur d'authentification que le prestataire ne peut pas livrer avant novembre.
+
+3. Stratégie de déploiement
+
+Leïla Mansour présente le plan de déploiement. Plutôt qu'une ouverture simultanée sur les trois sites, elle propose de commencer par un pilote, pour recueillir les retours avant d'ouvrir le portail à tous.
+
+Le comité retient un démarrage en deux temps : un pilote à partir du lundi 5 octobre sur le site de Lyon, puis la mise en production générale, décalée au 16 novembre 2026.
+
+Le pilote concernera 340 utilisateurs du site de Lyon, choisis dans quatre services : Développement, Support, Finance et RH.
+
+Inès Faure rapporte que plusieurs utilisateurs pressentis pour le pilote demandent si l'assistant évoqué au printemps, qui devait aider à remplir les demandes, sera disponible dès le lancement. Leïla Mansour prend note de la question.
+
+4. Achats
+
+Martine Leroux présente le résultat de la consultation lancée en mai. Trois offres ont été reçues ; le comité retient la mieux-disante.
+
+Martine Leroux précise : « Le nouveau fournisseur s'engage sur une livraison en cinq jours ouvrés pour les écrans et les claviers, avec des pénalités au-delà. » Le nouveau contrat prendra effet le 1er octobre.
+
+5. Parc informatique
+
+Samir Haddou indique que les postes du site de Grenoble ont tous été migrés vers Windows 11 pendant l'été, conformément au plan de renouvellement. Les écrans de la salle de formation de Grenoble ont été remplacés à cette occasion.
+
+6. Suivi des anomalies
+
+Vincent Royer présente le suivi des anomalies : aucune bloquante, 4 majeures et 17 mineures sont ouvertes à ce jour.
+
+Aucune anomalie bloquante n'est ouverte avant le pilote.
+
+7. Retours des utilisateurs référents
+
+Les utilisateurs référents ont participé à la recette en juillet. Sur les 64 scénarios du cahier de recette, 58 ont été validés du premier coup ; les six autres ont donné lieu à des anomalies, corrigées par le prestataire avant la fin du mois.
+
+8. Exploitation
+
+L'équipe d'exploitation surveillera le portail de 7 h à 20 h les jours ouvrés. Une alerte sera déclenchée si le taux d'erreurs dépasse 2 % sur cinq minutes.
+
+Pendant la première semaine du pilote, les déploiements seront limités aux corrections urgentes, et chacun sera annoncé à l'avance sur le canal de l'équipe projet.
+
+9. Équipement du télétravail
+
+Inès Faure relaie une demande des ressources humaines : proposer dans le catalogue un kit télétravail composé d'un écran, d'un clavier et d'une souris, plafonné à 350 €. Le comité accepte d'ajouter le kit au catalogue ; son montant dépassant le seuil de validation automatique, il passera par le manager.
+
+10. Formation des utilisateurs
+
+Inès Faure indique que les supports de formation ont été mis à jour pour tenir compte des nouvelles règles de validation. Les sessions destinées aux utilisateurs du pilote auront lieu la semaine précédant le lancement, en salle et à distance.
+
+Une foire aux questions de vingt-cinq entrées sera publiée sur l'intranet le jour de l'ouverture. Elle sera enrichie chaque semaine à partir des tickets reçus par le support.
+
+11. Support et assistance
+
+L'équipe support a été formée au portail les 8 et 9 septembre. Un modèle de ticket spécifique a été créé dans l'outil d'assistance, pour suivre séparément les questions liées au pilote. Le support prévoit un renfort de deux personnes pendant la première semaine.
+
+Actions
+
+- Leïla Mansour : liste nominative des utilisateurs du pilote, pour le 25 septembre
+- Inès Faure : sessions de formation des utilisateurs du pilote, pour le 2 octobre
+- Martine Leroux : bascule des commandes vers le nouveau fournisseur, pour le 1er octobre
+
+Prochain comité : mardi 13 octobre 2026.
+
+========================================================================
+COMITÉ DE PILOTAGE N° 9 - mardi 13 octobre 2026, 14 h, salle Rhône (Lyon)
+========================================================================
+
+Présents : Claire Vasseur, Leïla Mansour, Martine Leroux, Samir Haddou, Hélène Brunet, Olivier Marchand, Inès Faure, Vincent Royer
+Excusé : Bruno Carlier
+Rédaction : Leïla Mansour
+
+1. Validation du compte rendu
+
+Le compte rendu du 15 septembre est validé avec une correction : le pilote compte 280 utilisateurs, et non 340 comme indiqué au comité de septembre ; ce dernier chiffre incluait 60 comptes de test.
+
+2. Bilan de la première semaine du pilote
+
+Leïla Mansour présente le bilan de la première semaine. 412 demandes ont été déposées, dont 71 % ont été traitées en moins de 48 heures. Le questionnaire de satisfaction donne 81 % d'utilisateurs satisfaits ou très satisfaits.
+
+Un incident technique a provoqué des erreurs pendant environ une heure le matin du lancement ; l'analyse des journaux est en cours et sera présentée au prochain comité.
+
+Inès Faure relève que les demandes d'ordinateurs portables posent problème : plusieurs ont été validées automatiquement alors que le modèle demandé ne correspondait pas au profil du salarié.
+
+À la suite du pilote, le comité supprime la validation automatique pour les ordinateurs portables, quel que soit leur montant. Les autres règles de validation restent inchangées.
+
+3. Sécurité : vulnérabilité restante
+
+Hélène Brunet rappelle que la vulnérabilité sur la durée de session ne sera pas corrigée avant la généralisation. Elle déclare : « Accepter ce risque est un choix défendable, à condition de réduire la durée de session dès la première version corrective. »
+
+Claire Vasseur accepte formellement ce risque résiduel, au nom de la DSI, jusqu'à la livraison du correctif.
+
+4. Planning
+
+Pour laisser le temps de traiter les retours du pilote, le comité reporte la mise en production générale au 30 novembre 2026.
+
+5. Phase 2
+
+Vincent Royer présente une proposition d'avenant de 24 000 € pour une phase 2 : une application mobile et le module de statistiques complet retiré en avril. Olivier Marchand juge le chiffrage insuffisamment détaillé.
+
+Le comité refuse l'avenant en l'état ; le prestataire le présentera de nouveau, chiffrage détaillé à l'appui, au comité de janvier 2027.
+
+6. Suivi des anomalies
+
+Vincent Royer présente le suivi des anomalies : 1 bloquante, 7 majeures et 22 mineures sont ouvertes à ce jour.
+
+L'anomalie bloquante concerne l'envoi des récapitulatifs aux managers ; un contournement est en place.
+
+7. Notifications
+
+Les utilisateurs du pilote jugent les courriels de changement de statut trop nombreux. Le prestataire proposera un réglage permettant à chaque salarié de ne recevoir que les notifications de refus et de livraison.
+
+8. Gestion de parc
+
+La synchronisation nocturne avec l'outil de gestion de parc fonctionne depuis le 7 octobre. Le numéro de série du matériel livré est désormais saisi par la logistique au moment de la remise, ce qui évite la double saisie constatée pendant les premiers jours du pilote.
+
+9. Protection des données personnelles
+
+Le registre des traitements a été mis à jour pour le pilote. Une mention d'information est affichée à la première connexion. Aucune demande d'exercice de droits n'a été reçue depuis le lancement.
+
+10. Accessibilité
+
+Les résultats de l'audit d'accessibilité sont présentés : 87 % des critères sont respectés. Les principaux écarts concernent le contraste de certains boutons et l'ordre de lecture du tableau de suivi. Le prestataire corrigera ces écarts avant la généralisation.
+
+Actions
+
+- Samir Haddou : analyse de l'incident du 5 octobre, pour le 10 novembre
+- Vincent Royer : correctif de la durée de session, date à confirmer
+- Inès Faure : bilan détaillé du questionnaire de satisfaction, pour le 10 novembre
+
+Prochain comité : mardi 10 novembre 2026.
+
+========================================================================
+COMITÉ DE PILOTAGE N° 10 - mardi 10 novembre 2026, 14 h, salle Rhône (Lyon)
+========================================================================
+
+Présents : Claire Vasseur, Leïla Mansour, Martine Leroux, Samir Haddou, Hélène Brunet, Olivier Marchand, Inès Faure, Vincent Royer, Bruno Carlier
+Excusé : Paul Renaud
+Rédaction : Leïla Mansour
+
+1. Validation du compte rendu
+
+Le compte rendu du comité précédent est validé sans modification.
+
+2. Analyse de l'incident du 5 octobre
+
+Samir Haddou indique que l'analyse de l'incident du 5 octobre n'est pas terminée : l'équipe d'exploitation n'a transmis qu'une partie des journaux. Il présentera ses conclusions au prochain comité.
+
+3. Planning
+
+Leïla Mansour présente les retours du pilote encore à traiter, en particulier sur l'écran des achats. Elle rappelle que la clôture comptable de fin d'année mobilisera les équipes Finance en décembre.
+
+Le comité reporte à nouveau la mise en production générale, au 11 janvier 2027. Cette date doit encore être confirmée par la direction générale : Paul Renaud, excusé, sera consulté d'ici la fin du mois de novembre.
+
+4. Point budgétaire
+
+Olivier Marchand présente la consommation au 31 octobre : 187 400 € engagés. Il estime que le projet restera dans l'enveloppe si la généralisation n'entraîne pas de développement supplémentaire.
+
+5. Retours du pilote
+
+Inès Faure présente le bilan détaillé du questionnaire : 81 % de satisfaits, comme annoncé en octobre, avec des demandes récurrentes sur la recherche dans le catalogue et sur les notifications par courriel.
+
+6. Suivi des anomalies
+
+Vincent Royer présente le suivi des anomalies : aucune bloquante, 3 majeures et 15 mineures sont ouvertes à ce jour.
+
+Le stock d'anomalies diminue depuis trois semaines.
+
+7. Indicateurs du pilote
+
+Olivier Marchand présente les premiers indicateurs du pilote, sur les cinq semaines écoulées : un délai moyen de 4,1 jours entre la demande et la livraison, contre 10,2 jours dans l'ancien circuit, et 6 % de demandes incomplètes. Il rappelle que ces chiffres portent sur un seul site et sur des services volontaires.
+
+8. Formation des utilisateurs
+
+Inès Faure présente le calendrier de formation des autres sites. Les sessions de Grenoble pourront commencer dès décembre ; celles de Villeurbanne seront organisées en janvier. Les référents du pilote de Lyon interviendront dans les sessions pour partager leur expérience.
+
+9. Communication
+
+Le service communication propose de profiter des vœux de début d'année pour annoncer l'ouverture du portail à tous les salariés. Une vidéo de deux minutes, tournée avec des utilisateurs du pilote, est en cours de montage.
+
+10. Support et assistance
+
+Le support a enregistré 96 tickets liés au portail depuis le début du pilote, dont 58 % de questions d'utilisation et 11 % d'anomalies. Le délai moyen de résolution est de 1,8 jour. Les questions les plus fréquentes portent sur le suivi des demandes refusées.
+
+Actions
+
+- Leïla Mansour : note à la direction générale pour confirmer la date du 11 janvier, pour le 27 novembre
+- Samir Haddou : conclusions de l'analyse de l'incident du 5 octobre, prochain comité
+- Inès Faure : plan de formation des sites de Villeurbanne et de Grenoble, pour le 8 décembre
+
+Prochain comité : mardi 8 décembre 2026.

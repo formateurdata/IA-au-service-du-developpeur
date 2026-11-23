@@ -1,0 +1,273 @@
+:root {
+  --fond: #f5f6f8;
+  --surface: #ffffff;
+  --texte: #1d2433;
+  --discret: #5b6475;
+  --bordure: #d9dde5;
+  --accent: #1f5fbf;
+  --attente: #8a5a00;
+  --attente-fond: #fff3d6;
+  --validee: #135e2f;
+  --validee-fond: #ddf3e4;
+  --refusee: #8f1d1d;
+  --refusee-fond: #fde2e2;
+  --livree: #1f3f73;
+  --livree-fond: #e1eaf8;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--texte);
+  background: var(--fond);
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.entete h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.entete p {
+  margin: 4px 0 24px;
+  color: var(--discret);
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin: 0 0 12px;
+}
+
+.formulaire,
+.liste,
+.panneau {
+  background: var(--surface);
+  border: 1px solid var(--bordure);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.formulaire {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  align-items: end;
+}
+
+.formulaire h2,
+.formulaire .large,
+.formulaire [role="alert"] {
+  grid-column: 1 / -1;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: var(--discret);
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+  color: var(--texte);
+  padding: 6px 8px;
+  border: 1px solid var(--bordure);
+  border-radius: 6px;
+  background: var(--surface);
+}
+
+button {
+  font: inherit;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+table.demandes button {
+  background: transparent;
+  color: var(--accent);
+  padding: 2px 8px;
+}
+
+table.demandes {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.demandes th,
+table.demandes td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid var(--bordure);
+}
+
+table.demandes th {
+  font-size: 0.85rem;
+  color: var(--discret);
+}
+
+tr.details td {
+  background: var(--fond);
+  font-size: 0.9rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-en_attente {
+  color: var(--attente);
+  background: var(--attente-fond);
+}
+
+.badge-validee {
+  color: var(--validee);
+  background: var(--validee-fond);
+}
+
+.badge-refusee {
+  color: var(--refusee);
+  background: var(--refusee-fond);
+}
+
+.badge-livree {
+  color: var(--livree);
+  background: var(--livree-fond);
+}
+
+[role="alert"] {
+  color: var(--refusee);
+}
+
+[role="alert"] button {
+  margin-left: 8px;
+}
+
+.criteres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.criteres label {
+  min-width: 220px;
+}
+
+.visuellement-cache {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Onglets et pages ajoutés au fil des labs du jour 2. */
+.onglets {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0 24px;
+}
+
+.onglets button {
+  background: var(--surface);
+  color: var(--accent);
+}
+
+.onglets button[aria-current="page"] {
+  background: var(--accent);
+  color: #fff;
+}
+
+.generation {
+  display: grid;
+  gap: 12px;
+}
+
+fieldset {
+  border: 1px solid var(--bordure);
+  border-radius: 6px;
+}
+
+label.choix {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  color: var(--texte);
+}
+
+.controles {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  font-size: 0.85rem;
+}
+
+.controles .tenu {
+  color: var(--validee);
+}
+
+.controles .non-tenu {
+  color: var(--refusee);
+  font-weight: 600;
+}
+
+.discret {
+  color: var(--discret);
+  font-size: 0.85rem;
+}
+
+.apercu {
+  display: block;
+  width: 100%;
+  min-height: 260px;
+  border: 1px dashed var(--bordure);
+  border-radius: 6px;
+  padding: 12px;
+  box-sizing: border-box;
+  background: var(--surface);
+}
+
+pre {
+  white-space: pre-wrap;
+  font-size: 0.8rem;
+  background: var(--fond);
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.reponse {
+  background: var(--fond);
+  border-radius: 6px;
+  padding: 12px;
+}
+
+@media (max-width: 700px) {
+  .formulaire {
+    grid-template-columns: 1fr;
+  }
+}
