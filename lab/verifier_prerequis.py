@@ -18,7 +18,9 @@ from pathlib import Path
 
 LAB = Path(__file__).resolve().parent
 DEPARTS = [LAB / "lab1-copilot" / "depart", LAB / "lab2-generation" / "depart",
-           LAB / "lab3-rag" / "depart"]
+           LAB / "lab3-rag" / "depart", LAB / "lab4-agents" / "depart"]
+# Les labs qui appellent OpenAI ; le lab 4 passe par le compte Copilot.
+DEPARTS_AVEC_CLE = DEPARTS[1:3]
 
 resultats = []
 
@@ -139,7 +141,7 @@ def main():
               "un autre programme l'utilise : l'arrêter avant les labs")
 
     cles = []
-    for depart in DEPARTS[1:]:
+    for depart in DEPARTS_AVEC_CLE:
         api = depart / "api"
         cle, origine = cle_du_lab(api)
         nom = depart.parent.name

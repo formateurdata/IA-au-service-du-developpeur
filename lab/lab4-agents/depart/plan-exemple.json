@@ -1,0 +1,19 @@
+{
+  "objectif": "La recherche q de GET /api/demandes porte aussi sur le service, et l'interface l'annonce.",
+  "criteres": {
+    "CA1": "GET /api/demandes?q=Finance renvoie HTTP 200 et les 3 demandes du service Finance.",
+    "CA2": "La recherche dans le demandeur reste inchangée : q=Benali renvoie la seule demande de Karim Benali.",
+    "CA3": "Le champ de recherche de l'interface affiche le texte indicatif « Nom, matériel ou service »."
+  },
+  "code": ["api/app/main.py", "web/src/components/RechercheDemandes.tsx"],
+  "tests": ["api/tests/test_recherche_service.py", "web/src/components/RechercheService.test.tsx"],
+  "contexte": [
+    "AGENTS.md",
+    "api/app/modeles.py",
+    "api/tests/conftest.py",
+    "api/tests/test_demandes.py",
+    "web/src/api.ts",
+    "web/src/types.ts",
+    "web/src/App.test.tsx"
+  ]
+}
