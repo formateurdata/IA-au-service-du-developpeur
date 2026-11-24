@@ -61,7 +61,8 @@ journal porte l'heure, le temps ecoule et l'acteur. Dans l'ordre :
 2. `pilote` : livraisons controlees, puis `écrit app/main.py (modifié, +5 -2)`
    pour chaque fichier ;
 3. `testeur` : `commence`, puis la commande pytest et sa sortie reelle ;
-4. `pilote` : une ligne par critere avec le test qui le prouve ;
+4. `pilote` : une ligne par critere avec les tests cites, verifies passes et
+   issus des fichiers de tests du plan ;
 5. le `BILAN` : une ligne par session d'agent (heures, duree, fichiers
    ecrits), les tests (`réussis : 11 sur 11`), le verdict, puis
    `Trace complète : traces/<horodatage>-filtre-statut.md`.
@@ -90,8 +91,11 @@ les quatre valeurs, et que le 422 vient du type, pas d'un `if`.
    le testeur n'est jamais appele sur un etat incomplet.
 3. **Le testeur ne peut pas mentir sur l'execution.** Il n'a qu'un outil,
    `executer_pytest`. S'il repond sans l'appeler, le pilote s'arrete. S'il
-   cite un test absent des `PASSED` de la sortie reelle, le critere devient
-   « preuve absente » et le verdict `NON VALIDÉ`, meme avec une suite verte.
+   cite un test absent des `PASSED` de la sortie reelle, ou un test qui ne
+   vient pas des fichiers de tests du plan, la preuve est refusee et le
+   verdict est `NON VALIDÉ`, meme avec une suite verte. Le pilote ne juge
+   pas, en revanche, qu'un test cite demontre son critere : le bilan le
+   rappelle, c'est a l'humain de relire les tests cites.
 4. **Les permissions par construction** (diapositive 17, demo 3 bis du
    jour 1). Le developpeur et le redacteur n'ont aucun outil ; toute demande
    de permission est refusee par le pilote. Ils ne peuvent que proposer des
@@ -119,13 +123,17 @@ Depuis `projet/` :
 uv run --locked --group orchestration python -m unittest discover -s verification
 ```
 
-Huit tests. Six scenarios avec des doubles de sessions : l'ordre des
-livraisons, un refus de livrer, une session en erreur, l'obligation de lancer
-pytest, une preuve inventee, une correction suivie d'une seconde execution.
-Ceux qui vont jusqu'a l'execution lancent vraiment pytest dans un projet
-temporaire. Un septieme verifie le contenu de la trace, un huitieme que le
-pilote trouve les trois profils dans `.github/agents/` a la racine de la
-formation.
+Dix-sept tests. Avec des doubles de sessions : l'ordre des livraisons, un
+refus de livrer, une session en erreur, l'obligation de lancer pytest, une
+preuve inventee, une preuve venue d'un autre fichier de tests, une
+correction suivie d'une seconde execution, une correction sans modification,
+la relance du meme plan, le registre ecrit avant les tests, le contenu de la
+trace. Ceux qui vont jusqu'a l'execution lancent vraiment pytest dans un
+projet temporaire. Cinq tests portent sur les tests existants : refuses,
+sauf ceux que le pilote a crees pour ce meme plan, et jamais pour un plan de
+meme nom dans un autre dossier, un plan modifie ou un registre perdu. Le
+dernier verifie que le pilote trouve les trois profils dans `.github/agents/`
+a la racine de la formation.
 
 ## Remettre a zero apres la repetition
 
@@ -140,6 +148,11 @@ git status .           # rien d'autre ne doit apparaitre
 Si le plan valide en seance a nomme un autre fichier de tests, `git status`
 le montre : le supprimer aussi.
 
+Pour rejouer le meme plan sans remettre a zero, relancer la commande : le
+pilote reprend le test qu'il a cree pour ce plan, inscrit dans
+`traces/tests-crees.json`. Si le plan a change, il refuse tant que ce test
+existe : c'est un nouveau contrat.
+
 ## A verifier la veille
 
 - Copilot CLI authentifie avec un compte qui a acces a Copilot :
@@ -147,6 +160,6 @@ le montre : le supprimer aussi.
 - Le premier `uv run --script pilote.py` telecharge le SDK et prepare son
   runtime : le faire la veille, avec le reseau, puis remettre a zero.
 - `uv sync` dans `projet/`, puis `uv run pytest` : 1 passed.
-- La verification ci-dessus : 8 tests OK.
+- La verification ci-dessus : 17 tests OK.
 - Dans le menu des agents de Copilot Chat, `orchestrateur` apparait et les
   trois specialistes n'apparaissent pas.

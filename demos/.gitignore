@@ -5,3 +5,8 @@ chroma_db/
 sorties/
 *.png
 cache-tiktoken/
+# Agent cree en direct par la demo 3 bis du jour 1 : a recreer a chaque session
+j1/demo3bis-agent-relecteur/projet/.github/
+# Plans ecrits par l'orchestrateur et traces du pilote, demo 5 du jour 2
+.copilot-plans/
+j2/demo5-systeme-agentique/projet/traces/

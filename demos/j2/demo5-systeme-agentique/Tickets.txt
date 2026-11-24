@@ -59,4 +59,4 @@ Présente-moi maintenant le plan à valider.
 VALIDATION - le même message pour chaque ticket, après lecture du plan
 ======================================================================
 
-Je valide ce plan. Enregistre-le et lance le pilote Python. À la fin, montre-moi le bilan : ce que chaque agent a fait, les fichiers modifiés avec leur diff, le résultat des tests, la preuve par critère et le lien vers la trace.
+Je valide ce plan. Enregistre-le et lance le pilote Python. À la fin, montre-moi le bilan : ce que chaque agent a fait, les fichiers modifiés avec leur diff, le résultat des tests, les tests cités pour chaque critère et le lien vers la trace.

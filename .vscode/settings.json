@@ -6,5 +6,10 @@
   "search.exclude": {
     "**/.env": true,
     "**/.env.*": true
-  }
+  },
+  "chat.tools.terminal.autoApprove": {
+  "/^uv sync --locked$/": true,
+  "/^uv run --locked pytest\\b/": true,
+  "/^uv run --script pilote\\.py --plan \\.copilot-plans\\/[\\w-]+\\.json --approuve$/": true
+}
 }
