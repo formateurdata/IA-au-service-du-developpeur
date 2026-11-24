@@ -1,6 +1,6 @@
 # Demonstrations - Formation DEIA
 
-Les huit demonstrations des deux jours, faites ensemble en salle, et le
+Les dix demonstrations des deux jours, faites ensemble en salle, et le
 materiel de l'exercice en binome du Jour 1 sur les hallucinations.
 
 ## Principe : rien ne doit dependre du reseau en salle
@@ -73,11 +73,12 @@ Numeros de diapositive de `DEIA_Jour1_v2.pptx`.
 | 1. Tokenisation | 10 | `j1/demo1-tokenisation/` |
 | 2. ChatGPT contre Copilot | 15 | `j1/demo2-chatgpt-vs-copilot/` |
 | 3. Generer sans puis avec des regles | 19 | `j1/demo3-cadrage/` |
+| 3 bis. Un agent relecteur cree avec /create-agent | apres 19 | `j1/demo3bis-agent-relecteur/` |
 | 4. Provoquer une hallucination | 24 | `j1/demo4-hallucination/` |
 | Exercice en binome | 27 | `j1/demo4-hallucination/` |
 
-Les demos 2, 3 et 4 se jouent dans l'editeur ou dans un assistant, sans
-script. La demo 4 et l'exercice partagent `Demo_Hallucinations.pdf` et les
+Les demos 2, 3, 3 bis et 4 se jouent dans l'editeur ou dans un assistant,
+sans script. La demo 4 et l'exercice partagent `Demo_Hallucinations.pdf` et les
 deux documents longs de `j1/demo4-hallucination/materiel/` : le journal des
 comites de pilotage du portail et les journaux de son API. La fiche donne les
 questions a poser, le reglage de l'outil, la parade et les reponses, calculees
@@ -91,12 +92,17 @@ sur les fichiers.
 | 2. Prompt template LangChain | 10 | `j2/demo2-langchain-template/` | Lab 2 et Lab 3 |
 | 3. Recherche par similarite | 16 | `j2/demo3-similarite/` | Lab 3 |
 | 4. Prompt court contre detaille | 25 | `j2/demo4-image/` | - |
+| 5. Un systeme agentique : quatre agents | - | `j2/demo5-systeme-agentique/` | Lab 4 |
+
+La demo 5 se joue dans VS Code avec Copilot Chat, sans plan B enregistre.
+Ses quatre agents sont dans `.github/agents/` a la racine de la formation :
+ouvrir la racine dans VS Code pour les voir.
 
 `j2/corpus/` contient six procedures internes fictives. Il sert a la demo 3
 **et** au Lab 3, a l'identique : les participants retrouveront les memes
 documents, ce qui leur evite de decouvrir l'outil et les donnees en meme temps.
 
-## Trois demos a retester imperativement avant chaque session
+## Cinq demos a retester imperativement avant chaque session
 
 **Jour 1, demo 4 (hallucination).** Les modeles evoluent : une question qui
 piegeait le modele il y a six mois peut aujourd'hui recevoir une reponse
@@ -109,8 +115,17 @@ l'extension Copilot prend bien en compte `AGENTS.md`. Sinon, renommer le
 fichier en `.github/copilot-instructions.md` : meme contenu, meme effet,
 convention plus ancienne et plus largement supportee.
 
+**Jour 1, demo 3 bis (agent relecteur).** Verifier que `/create-agent` est
+disponible dans Copilot Chat, et supprimer `projet/.github/` apres la
+repetition : voir `j1/demo3bis-agent-relecteur/README.md`.
+
 **Jour 2, demo 4 (image).** Verifier que le modele d'image du script est
 toujours disponible : voir `j2/demo4-image/README.md`.
+
+**Jour 2, demo 5 (systeme agentique).** Verifier que Copilot CLI est
+authentifie (`copilot login`) et lancer le pilote une fois la veille, avec le
+reseau : le premier lancement telecharge le SDK. Remettre `projet/` a zero
+ensuite : voir `j2/demo5-systeme-agentique/README.md`.
 
 ## Ce que ce dossier ne contient pas
 

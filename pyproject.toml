@@ -17,6 +17,10 @@ dependencies = [
     "snowballstemmer>=2.2",
 ]
 
+[dependency-groups]
+# pytest pour la demo 3 bis du jour 1 (agent relecteur)
+dev = ["pytest>=8"]
+
 [tool.uv]
 # Un environnement, pas un paquet a installer.
 package = false
